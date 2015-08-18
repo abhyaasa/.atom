@@ -1,0 +1,32 @@
+"*":
+  editor:
+    fontSize: 12
+    showInvisibles: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    invisibles: {}
+  core:
+    themes: [
+      "atom-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+    disabledPackages: [
+      "language-todo"
+    ]
+  "exception-reporting":
+    userId: "95b677a0-dd5e-13f8-96b1-35a26a66a99a"
+  welcome:
+    showOnStartup: false
+  emmet: {}
+  "atom-lint":
+    ignoredNames: [
+      "tmp/**"
+    ]
+    showViolationMetadata: true
+  "markdown-preview": {}
+  "":
+    coffee:
+      source:
+        editor:
+          autoIndentOnPaste: true
