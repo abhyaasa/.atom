@@ -35,7 +35,7 @@
 
 '.platform-darwin atom-text-editor:not([mini])':
   'cmd-shift-e': 'emmet:expand-abbreviation'
-  'ctrl-shift-d': 'emmet:balance-outward'
+  'ctrl-d': 'emmet:balance-outward'
   'alt-d': 'emmet:balance-inward'
   'ctrl-right': 'emmet:next-edit-point'
   'ctrl-left': 'emmet:prev-edit-point'

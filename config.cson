@@ -13,6 +13,9 @@
     ]
     disabledPackages: [
       "language-todo"
+      "linter-coffeescript"
+      "linter-jsonlint"
+      "linter-flake8"
     ]
   "exception-reporting":
     userId: "95b677a0-dd5e-13f8-96b1-35a26a66a99a"
@@ -55,6 +58,14 @@
       "REVIEWs"
       "/\\b@?REVIEW:?\\s(.+$)/g"
     ]
-    openListInDirection: "bottom"
-    groupMatchesBy: "regexp"
     rememberViewSize: true
+    openListInDirection: "down"
+  "linter-flake8":
+    executablePath: "/usr/local/bin/flake8"
+    hangClosing: true
+    maxLineLength: 80
+  "linter-pylint":
+    executable: "/usr/local/bin/pylint"
+  "linter-xmllint":
+    xmllintExecutablePath: "/opt/local/bin/xmllint"
+  "linter-scss-lint": {}
