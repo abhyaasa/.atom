@@ -23,3 +23,7 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+# changed emmet:balance-outward
+'.platform-darwin atom-text-editor:not([mini])':
+  'ctrl-p': 'core:delete'

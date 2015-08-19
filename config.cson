@@ -30,3 +30,31 @@
       source:
         editor:
           autoIndentOnPaste: true
+  "todo-show":
+    ignoreThesePaths: [
+      "*/node_modules/"
+      "*/vendor/"
+      "*/bower_components/"
+      "*/lib/"
+    ]
+    findTheseRegexes: [
+      "FIXMEs"
+      "/\\b@?FIXME:?\\s(.+$)/g"
+      "TODOs"
+      "/\\b@?TODO:?\\s(.+$)/g"
+      "CHANGEDs"
+      "/\\b@?CHANGED:?\\s(.+$)/g"
+      "XXXs"
+      "/\\b@?XXX:?\\s(.+$)/g"
+      "IDEAs"
+      "/\\b@?IDEA:?\\s(.+$)/g"
+      "HACKs"
+      "/\\b@?HACK:?\\s(.+$)/g"
+      "NOTEs"
+      "/\\b@?NOTE:?\\s(.+$)/g"
+      "REVIEWs"
+      "/\\b@?REVIEW:?\\s(.+$)/g"
+    ]
+    openListInDirection: "bottom"
+    groupMatchesBy: "regexp"
+    rememberViewSize: true
