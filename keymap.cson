@@ -25,6 +25,7 @@
 # https://github.com/bevry/cson#what-is-cson
 
 '.platform-darwin atom-text-editor:not([mini])':
-  # remap old binding
   'ctrl-shift-d': 'emmet:balance-outward'
   'ctrl-d': 'core:delete'
+  'ctrl-alt-e': 'emmet:expand-abbreviation'
+  'ctrl-e': 'editor:move-to-end-of-line'
