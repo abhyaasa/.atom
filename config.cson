@@ -26,11 +26,6 @@
     ]
     showViolationMetadata: true
   "markdown-preview": {}
-  "":
-    coffee:
-      source:
-        editor:
-          autoIndentOnPaste: true
   "todo-show":
     ignoreThesePaths: [
       "node_modules/"
@@ -41,10 +36,6 @@
       ".git/"
     ]
     rememberViewSize: true
-  "linter-flake8":
-    executablePath: "/usr/local/bin/flake8"
-    hangClosing: true
-    maxLineLength: 80
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
   "linter-xmllint":
@@ -57,3 +48,5 @@
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
     wrapSelectionsInBrackets: false
+  'file-types':
+    'jshintrc': 'source.json'

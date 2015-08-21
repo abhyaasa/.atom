@@ -1,0 +1,4 @@
+tabLength: 2
+extensionConfig:
+  cson:
+    tabLength: 2
