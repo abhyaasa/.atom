@@ -29,3 +29,5 @@
   'ctrl-d': 'core:delete'
   'ctrl-alt-e': 'emmet:expand-abbreviation'
   'ctrl-e': 'editor:move-to-end-of-line'
+  'alt-shift-m': 'emmet:merge-lines'
+  'ctrl-shift-m': 'markdown-preview:toggle'

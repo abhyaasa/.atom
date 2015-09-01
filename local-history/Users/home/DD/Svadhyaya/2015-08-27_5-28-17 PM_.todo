@@ -1,0 +1,31 @@
+{
+    "regex": {
+        "prefix": "(?:\\/\\*|\\/\\/|#|<!--) *@?(",
+        "suffix": "):? *(.*?) ?(?=\\*/|\\n|$|-->)"
+    },
+    "tags": [
+        "CHECK",
+        "XX",
+        "TODO",
+        "PUBLISH",
+        "ANDROID",
+        "NOTE",
+        "FIX ?ME",
+        "CHANGES",
+        "FUTURE"
+    ],
+    "case": false,
+    "search": {
+        "scope": "project",
+        "excludeFolders": [".git",
+            "node_modules",
+            "platforms",
+            "plugins",
+            "www/lib"
+        ],
+        "excludeFiles": []
+    },
+    "sort": {
+        "done": false
+    }
+}

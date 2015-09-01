@@ -1,19 +1,26 @@
 "*":
   editor:
-    fontSize: 12
     showInvisibles: true
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
     invisibles: {}
+    fontSize: 11
   core:
     themes: [
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    disabledPackages: [
-      "language-todo"
-      "linter-coffeescript"
+    ignoredNames: [
+      ".git"
+      ".DS_Store"
+      "node_modules"
+      "platforms"
+      "plugins"
+      "css"
+      "lib"
+      "*.pyc"
+      "*~"
     ]
   "exception-reporting":
     userId: "95b677a0-dd5e-13f8-96b1-35a26a66a99a"
@@ -48,5 +55,22 @@
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
     wrapSelectionsInBrackets: false
-  'file-types':
-    'jshintrc': 'source.json'
+  "file-types":
+    jshintrc: "source.json"
+    xmlhintrc: "source.json"
+    htmlhintrc: "source.json"
+    jsbeautifyrc: "source.json"
+  "merge-conflicts":
+    gitPath: "/usr/bin/git"
+  "highlight-line": {}
+  minimap: {}
+  "spell-check": {}
+  "tree-view":
+    hideIgnoredNames: true
+  jshint:
+    validateOnlyOnSave: true
+  "linter-jscs":
+    onlyConfig: true
+  docblockr:
+    deep_indent: true
+    indentation_spaces_same_para: 3
