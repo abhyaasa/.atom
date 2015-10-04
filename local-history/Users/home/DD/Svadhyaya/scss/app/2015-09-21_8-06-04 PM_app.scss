@@ -1,0 +1,17 @@
+// app scss other than variables
+
+.major-text {
+  font-size: 120%; }
+
+.minor-text {
+  font-size: 90%; }
+
+.fine-print {
+  font-size: 80%; }
+
+.warning {
+  color: $warning-color; }
+
+td, 
+th {
+  padding: 10px; }

@@ -1,0 +1,88 @@
+"*":
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    softWrap: true
+    preferredLineLength: 90
+    softWrapAtPreferredLineLength: true
+    invisibles: {}
+    fontSize: 11
+  core:
+    themes: [
+      "atom-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+    ignoredNames: [
+      ".git"
+      ".DS_Store"
+      "node_modules"
+      "platforms"
+      "plugins"
+      "css"
+      "lib"
+      "*.pyc"
+      "*~"
+    ]
+    disabledPackages: [
+      "language-make"
+      "language-less"
+      "language-mustache"
+      "language-perl"
+      "language-php"
+      "language-ruby-on-rails"
+      "metrics"
+    ]
+  "exception-reporting":
+    userId: "95b677a0-dd5e-13f8-96b1-35a26a66a99a"
+  welcome:
+    showOnStartup: false
+  emmet: {}
+  "atom-lint":
+    ignoredNames: [
+      "tmp/**"
+    ]
+    showViolationMetadata: true
+  "markdown-preview": {}
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules/"
+      "vendor/"
+      "platforms/"
+      "www/lib/"
+      "plugins/"
+      ".git/"
+    ]
+    rememberViewSize: true
+  "linter-pylint":
+    executable: "/usr/local/bin/pylint"
+  "linter-xmllint":
+    xmllintExecutablePath: "/opt/local/bin/xmllint"
+  "linter-scss-lint":
+    executablePath: "/Users/home/.rvm/gems/ruby-1.9.3-p545/bin/scss-lint"
+  "atom-beautify":
+    _analyticsUserId: "95d97e54-3d85-46dc-8270-12afbbaa5e62"
+  linter: {}
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+    wrapSelectionsInBrackets: false
+  "file-types":
+    jshintrc: "source.json"
+    xmlhintrc: "source.json"
+    htmlhintrc: "source.json"
+    jsbeautifyrc: "source.json"
+  "merge-conflicts":
+    gitPath: "/usr/bin/git"
+  "highlight-line": {}
+  minimap: {}
+  "spell-check": {}
+  "tree-view":
+    hideIgnoredNames: true
+  jshint:
+    validateOnlyOnSave: true
+  "linter-jscs":
+    onlyConfig: true
+  docblockr:
+    deep_indent: true
+    indentation_spaces_same_para: 3
+  term2: {}

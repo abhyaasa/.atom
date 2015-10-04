@@ -1,0 +1,13 @@
+{
+  "name": "Svadhaya",
+  "app_id": "d5e1e9cc",
+  "gulpStartupTasks": [
+    "default",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/css/ionic.app.min.css"
+  ]
+}

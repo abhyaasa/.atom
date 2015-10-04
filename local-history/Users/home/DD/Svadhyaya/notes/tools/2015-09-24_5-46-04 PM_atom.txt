@@ -1,0 +1,167 @@
+cmd-. for keybinding
+shift-cmd-p command palette
+cmd-ctrl-b atom-beutify 
+
+cmd-/ toggle line/selection comment
+cmd-e use selection for find
+opt-delete delete text to beginning of word
+
+  VIEW
+cmd-\ toggle tree-view sidebar
+ctrl-cmd-f toggle fullscreen
+
+  MARKS, GOTO
+ctrl-space set mark
+cmd-r goto symbol
+cmd-f2 set bookmark
+f2 next bookmark
+
+  LINE
+cmd-enter insert newline after current line
+cmd-shift-enter insert new line before current line
+ctrl-shift-k delete current line
+ctrl-cmd-up/down move current line up/down
+shift-cmd-d duplicate current line
+cmd-j join current and next line
+
+  SELECT
+cmd-d select current word
+cmd-l select current line
+opt-shift-left/right select to geginning/end of word
+shift-cmd-left/right select to first/last character of line
+shift-cmd-up/down select all/to-bottom of document
+
+~/.atom on github
+
+--------------------------------------------------
+atomic-emacs keybinding
+
+'ctrl-f': 'atomic-emacs:forward-char'
+'ctrl-b': 'atomic-emacs:backward-char'
+'ctrl-n': 'atomic-emacs:next-line'
+'ctrl-p': 'atomic-emacs:previous-line'
+'ctrl-a': 'atomic-emacs:move-beginning-of-line'
+'ctrl-e': 'atomic-emacs:move-end-of-line'
+'ctrl-l': 'atomic-emacs:recenter-top-bottom'
+'ctrl-g': 'atomic-emacs:remove-mark'
+'ctrl-k': 'editor:cut-to-end-of-line'
+'ctrl-y': 'core:paste'
+'ctrl-w': 'atomic-emacs:kill-region'
+'ctrl-v': 'atomic-emacs:scroll-up'
+'ctrl-s': 'find-and-replace:show'
+'ctrl-r': 'find-and-replace:show'
+'ctrl-j': 'editor:newline'
+'ctrl-/': 'core:undo'
+'ctrl-o': 'atomic-emacs:open-line'
+'ctrl-t': 'atomic-emacs:transpose-chars'
+'ctrl-_': 'core:undo'
+'ctrl-space': 'atomic-emacs:set-mark'
+'ctrl-x ctrl-s': 'core:save'
+'ctrl-x ctrl-u': 'atomic-emacs:upcase-region'
+'ctrl-x ctrl-l': 'atomic-emacs:downcase-region'
+'ctrl-x ctrl-t': 'atomic-emacs:transpose-lines'
+'ctrl-x h': 'atomic-emacs:mark-whole-buffer'
+'ctrl-x ctrl-x': 'atomic-emacs:exchange-point-and-mark'
+'alt-f': 'atomic-emacs:forward-word'
+'alt-b': 'atomic-emacs:backward-word'
+'alt-q': 'autoflow:reflow-selection'
+'atl-t': 'atomic-emacs:transpose-words'
+'alt-w': 'atomic-emacs:copy'
+'alt-;': 'editor:toggle-line-comments'
+'alt-v': 'atomic-emacs:scroll-down'
+'alt-<': 'atomic-emacs:beginning-of-buffer'
+'alt->': 'atomic-emacs:end-of-buffer'
+'alt-m': 'atomic-emacs:back-to-indentation'
+'alt-/': 'autocomplete:toggle'
+'alt-.': 'symbols-view:toggle-file-symbols'
+'alt-\': 'atomic-emacs:delete-horizontal-space'
+'alt-space': 'atomic-emacs:just-one-space'
+'alt-{': 'atomic-emacs:backward-paragraph'
+'alt-}': 'atomic-emacs:forward-paragraph'
+--------------------------------------------------------
+
+uninstalled minimap until it behaves better
+
+fill paragraph (autoflow): cmd-alt-q
+split right: cmd-k ->
+close pane: ctrl-x 0
+command pallate: cmd-shift-P
+log cursor scope (e.g. use to find source.json): alt-cmd-p
+merge conflicts detect: atl-cmd-m
+autoflow (hard wrap selected lines): cmd-alt-q
+  consider multi-wrap-guide and hard-wrap packages
+
+spelling dictionary additions: system preferences > keyboard > text > +
+
+Lint and color: json, js, py, md, html, cson, coffee
+Color, no Lint:
+  xml (linter-xmllint issue submitted)
+  scss ('gem install scss_lint' fails, see gem_mess.txt)
+~/.jscsrc and ./.jshintrc
+
+
+https://atom.io/docs/v0.172.0/customizing-atom
+apm install emmet
+apm install atomic-emacs
+
+Scope names per https://atom.io/packages/file-types:
+> Object.keys(atom.grammars.grammarsByScopeName).sort().join('\n')
+"source.c
+source.cake
+source.clojure
+source.coffee
+source.cpp
+source.cs
+source.css
+source.css.less
+source.css.scss
+source.csx
+source.gfm
+source.git-config
+source.go
+source.gotemplate
+source.java
+source.java-properties
+source.js
+source.js.rails source.js.jquery
+source.js.regexp
+source.litcoffee
+source.makefile
+source.nant-build
+source.objc
+source.objcpp
+source.perl
+source.perl6
+source.plist
+source.python
+source.regexp.python
+source.ruby
+source.ruby.rails
+source.ruby.rails.rjs
+source.sass
+source.shell
+source.sql
+source.sql.mustache
+source.sql.ruby
+source.strings
+source.toml
+source.yaml
+text.git-commit
+text.git-rebase
+text.html.basic
+text.html.erb
+text.html.gohtml
+text.html.jsp
+text.html.mustache
+text.html.php
+text.html.ruby
+text.hyperlink
+text.junit-test-report
+text.plain
+text.plain.null-grammar
+text.python.console
+text.python.traceback
+text.shell-session
+text.xml
+text.xml.plist
+text.xml.xsl"

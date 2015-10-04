@@ -1,0 +1,26 @@
+From ~/.gitconfig
+  [alias]
+  	unstage = reset HEAD --
+  	co = checkout
+  	br = branch
+  	ci = commit
+  	st = status
+  	last = log -1 HEAD
+  	visual = !github
+  	plog = log --pretty=format:'%h %s' --graph
+  
+on git website: Fork, then Clone in Desktop
+
+ssh clone URL: git@github.com:vasudeva-chaynes/DDFlash.git
+https clone URL: https://github.com/vasudeva-chaynes/DDFlash.git
+
+git config --global credential.helper osxkeychain
+
+---------------------------------------
+
+error: revert is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit, or use
+hint: 'git commit -a'.
+fatal: revert failed
+ (128)

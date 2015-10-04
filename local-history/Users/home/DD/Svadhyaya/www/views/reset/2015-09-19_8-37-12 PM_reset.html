@@ -1,0 +1,21 @@
+<ion-view ng-controller="ResetController as reset">
+    <ion-content padding="true" class="has-header">
+        <div class="list">
+            <ion-radio ng-repeat="item in reset.options" ng-value="item.value" ng-model="reset.selection" ng-model="selected" ng-change="reset.changed(item)">
+               {{ item.text }}
+            </ion-radio>
+        </div>
+        <p>
+            <strong>
+                <font color="red">
+                    Resetting a deck, which cannot be reversed, erases all record of the deck's usage.
+                </font>
+            </strong>
+        </p>
+        <div class="button-bar" hide="{{ reset.hideConfirm }}">
+            <button class="button button-stable button-block">
+                Confirm
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

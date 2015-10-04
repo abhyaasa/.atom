@@ -1,10 +1,9 @@
 'use babel';
 
-import JSCS from 'jscs';
-import { Range } from 'atom';
-import { findFile } from 'atom-linter';
-import { readFileSync } from 'fs';
-import stripJSONComments from 'strip-json-comments';
+import path from 'path';
+import configFile from 'jscs/lib/cli-config';
+
+const grammarScopes = ['source.js', 'source.js.jsx'];
 
 export default class LinterJSCS {
 
@@ -14,7 +13,7 @@ export default class LinterJSCS {
       description: 'Preset option is ignored if a config file is found for the linter.',
       type: 'string',
       default: 'airbnb',
-      enum: ['airbnb', 'crockford', 'google', 'grunt', 'jquery', 'mdcs', 'node-style-guide', 'wikimedia', 'yandex']
+      enum: ['airbnb', 'crockford', 'google', 'grunt', 'jquery', 'mdcs', 'node-style-guide', 'wikimedia', 'wordpress', 'yandex']
     },
     esnext: {
       description: 'Attempts to parse your code as ES6+, JSX, and Flow using the babel-jscs package as the parser.',
@@ -62,10 +61,15 @@ export default class LinterJSCS {
   }
 
   static activate() {
+    // Install dependencies using atom-package-deps
+    require("atom-package-deps").install("linter-jscs");
+
     this.observer = atom.workspace.observeTextEditors((editor) => {
       editor.getBuffer().onWillSave(() => {
-        if (this.fixOnSave) {
-          this.fixString();
+        if (grammarScopes.indexOf(editor.getGrammar().scopeName) !== -1 && this.fixOnSave) {
+          process.nextTick(() => {
+            this.fixString();
+          });
         }
       });
     });
@@ -77,10 +81,12 @@ export default class LinterJSCS {
 
   static provideLinter() {
     return {
-      grammarScopes: ['source.js', 'source.js.jsx'],
+      grammarScopes,
       scope: 'file',
       lintOnFly: true,
       lint: (editor) => {
+        const JSCS = require('jscs');
+
         // We need re-initialize JSCS before every lint
         // or it will looses the errors, didn't trace the error
         // must be something with new 2.0.0 JSCS
@@ -88,55 +94,12 @@ export default class LinterJSCS {
         this.jscs.registerDefaultRules();
 
         const filePath = editor.getPath();
-        const configFiles = ['.jscsrc', '.jscs.json', 'package.json'];
-
-        // Search for project config file
-        let config = findFile(filePath, configFiles);
-
-        // Reset config if `jscsConfig` is not found in `package.json`
-        if (config && config.indexOf('package.json') > -1) {
-          const { jscsConfig } = require(config);
-          if (!jscsConfig) config = null;
-        }
-
-        // Search for home config file
-        if (!config) {
-          const homeDir = require('user-home');
-          if (homeDir) config = findFile(homeDir, configFiles);
-        }
+        const config = configFile.load(false, path.dirname(filePath));
 
         // Options passed to `jscs` from package configuration
         const options = { esnext: this.esnext, preset: this.preset };
 
-        if (config) {
-          try {
-            const rawConfig = readFileSync(config, { encoding: 'utf8' });
-            let parsedConfig = JSON.parse(stripJSONComments(rawConfig));
-
-            if (config.indexOf('package.json') > -1) {
-              if (parsedConfig.jscsConfig) {
-                parsedConfig = parsedConfig.jscsConfig;
-              } else {
-                throw new Error('No `jscsConfig` key in `package.json`');
-              }
-            }
-
-            this.jscs.configure(parsedConfig);
-          } catch (error) {
-            // Warn user only once
-            if (!this.warnLocalConfig) {
-              console.warn('[linter-jscs] No config found, or error while loading it.');
-              console.warn(error.stack);
-              this.warnLocalConfig = true;
-            }
-
-            // Reset config to null
-            config = null;
-            this.jscs.configure(options);
-          }
-        } else {
-          this.jscs.configure(options);
-        }
+        this.jscs.configure(config || options);
 
         // We don't have a config file present in project directory
         // let's return an empty array of errors
@@ -166,12 +129,14 @@ export default class LinterJSCS {
   }
 
   static fixString() {
-    if (!this.isMissingConfig && !this.onlyConfig) {
-      const editor = atom.workspace.getActiveTextEditor();
-      const path = editor.getPath();
-      const text = editor.getText();
+    if (this.isMissingConfig && this.onlyConfig) return;
 
-      return editor.setText(this.jscs.fixString(text, path).output);
-    }
+    const editor = atom.workspace.getActiveTextEditor();
+    const path = editor.getPath();
+    const text = editor.getText();
+    const fixedText = this.jscs.fixString(text, path).output;
+    if (text === fixedText) return;
+
+    return editor.setText(fixedText);
   }
 };
