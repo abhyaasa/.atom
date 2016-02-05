@@ -13,12 +13,16 @@
 @tab-bar-bottom-border-color: transparent;
 @tab-max-width: 160px;
 
+.active .tab-bar {
+    opacity: 1;
+}
 .tab-bar {
     height: @tab-height;
     padding: 0;
     overflow-x: auto;
     overflow-y: hidden;
     background-color: @app-background-color;
+    opacity: 0.5;
 
     &::-webkit-scrollbar {
         display: none;
@@ -78,7 +82,7 @@
             border-radius: 50%;
             width: @modified-icon-width;
             height: @modified-icon-width;
-            border: 2px solid fade(@text-color, 20%);
+            border: 2px solid @tab-border-color;
         }
         .title {
             position: relative;
@@ -87,6 +91,7 @@
             padding-left: 0;
             top: 0 !important; // seti-icons overrides this property
             transition: padding-left 200ms;
+            pointer-events: none;
         }
         .title::before {
             display: none;
@@ -100,13 +105,10 @@
             display: block;
             margin-right: 10px !important;
         }
-        &::before {
+        .ink {
             display: none;
-            content: '';
             position: absolute;
             border-radius: 50%;
-            top: calc(50% - 1px);
-            left: calc(50% - 1px);
             pointer-events: none;
             width: 2px;
             height: 2px;
@@ -137,7 +139,7 @@
             color: @text-color;
             -webkit-animation: zoomIn 250ms ease;
         }
-        &::before {
+        .ink {
             display: inline-block;
             -webkit-animation: ripple 500ms ease;
             -webkit-animation-fill-mode: forwards;
@@ -200,7 +202,7 @@
                     -webkit-animation: none;
                     -webkit-transition: none;
                 }
-                &::before {
+                .ink {
                     display: none;
                 }
             }
@@ -277,6 +279,20 @@
 .tab-size-big .tab-bar {
     .tab-size(64px);
 }
+.tab-min-width {
+    .tab-bar {
+        overflow: hidden;
+        overflow-x: scroll;
+
+        .tab {
+            min-width: 80px;
+
+            &.active {
+                min-width: 150px;
+            }
+        }
+    }
+}
 .ripple-color(@color) when (lightness(@color) > 60%) {
     background-color: rgba(0,0,0,0.1);
 }
@@ -288,7 +304,7 @@
         transform: scale(1);
     }
     to {
-        transform: scale(100);
+        transform: scale(200);
         opacity: 0;
     }
 }

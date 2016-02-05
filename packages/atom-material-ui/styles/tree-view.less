@@ -33,6 +33,9 @@
         width: 8px;
     }
 }
+.tree-view-scroller {
+    transform: translate3d(0, 0, 0);
+}
 .focusable-panel {
     opacity: 1;
 
@@ -59,4 +62,25 @@
     .tree-view {
         .tree-view-line-height(24px);
     }
+}
+.root-height(@size) {
+    .tree-view {
+        .project-root.list-nested-item {
+            &::before {
+                height: @size;
+            }
+            > div {
+                line-height: @size;
+            }
+        }
+    }
+}
+.tab-size-small {
+    .root-height(32px);
+}
+.tab-size-normal {
+    .root-height(48px);
+}
+.tab-size-big {
+    .root-height(64px);
 }

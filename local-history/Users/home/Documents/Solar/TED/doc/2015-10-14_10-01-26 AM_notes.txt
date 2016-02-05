@@ -1,0 +1,39 @@
+http://www.theenergydetective.com
+
+Edit > System Settings Wizard > Footprints Settings for color choices
+  Red: voltage
+  Green: MTU 1 total
+  Orange 2 S&B
+  Pink 3 furnace
+  Blue 4 minisplit
+
+MTUs flash green about every 5 seconds.
+
+Gateway
+- front regular green flash every second
+- side irregular green flash about every second
+- eithernet orangle flash, green solid
+
+Launch TED 5000 Installation Utility, when gateway found, select and click
+launch in browser.
+
+May need to use IP address in browser, e.g. http://192.168.1.83/Footprints.html
+
+netstat -r: ted5000 gateway MAC 0:25:2f:21:3f:ce
+netstat -nr: search MAC addr for IP addr
+  e.g. 192.168.1.83       0:25:2f:21:3f:ce
+
+Applications/TED 5000 OS X Installer.app finds gateway and provides web link.
+
+May need to unplug airport and gateway, then restore airport, then gateway.
+
+Edit > Systems Settings Wizard > Footprint Settings (double click) > Real Time KW Usage > enter max > Next > Update > wait for confirmation dialog > Finish
+
+---------------
+
+import matplotlib # uses numpy
+
+scripts/prettyxml.py uses xml.dom.minidom
+import lxml
+
+------

@@ -1,0 +1,16 @@
+ inkscape: vector graphics
+
+gimp: image graphics
+
+DIA (diagramming) app: arrows anchored on elements
+use siscors (cut) to delete elements.
+
+LibreOffice / Open Office odg drawing
+
+gramps (geneology)
+
+fritzing schematics
+
+eagle PC layout
+
+

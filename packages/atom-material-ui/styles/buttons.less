@@ -12,6 +12,13 @@
         color: @color;
     }
 }
+.btn-group > .btn {
+    border: none;
+
+    &.selected {
+        background: darken(@app-background-color, 10%);
+    }
+}
 .btn, button, button[class] {
     background: @app-background-color;
     color: @text-color;
@@ -19,6 +26,7 @@
     height: 36px;
     border-radius: 3px;
     line-height: 36px;
+    text-transform: uppercase;
     &:extend(.ripple);
 
     &:hover {
@@ -48,9 +56,6 @@
 
     // Alternative Buttons
 
-    &.btn-primary {
-        .button-variant(@md-cyan, #FFF);
-    }
     &.btn-info {
         .button-variant(@md-indigo, #FFF);
     }

@@ -1,0 +1,54 @@
+~/notes/security.txt
+
+http://www.safemart.com/ 800-628-6093 tech support 2
+
+9/mo	CMS (Central Station Monitoring) about 1 million acts (2 mo free)
+	Criticom Central Station Monitoring 800-367-6811
+	http://www.safemart.com/Alarm-System-Monitoring.html
+20/mo	LiveWatch GSM with internet access and iphone app (2 mo free)
+7/mo	+CMS monitoring
+5/mo	+advanced
+-100	rebate with $400+ system and 1 yr monitoring
+10/mo	video http://www.safemart.com/livewatch.htm
+300	pan/tilt wireless IP cam
+200	wireless IP cam
+200	analog IP adapter
+
+130 GE Security Simon XT
+198 9x22 qty6+ 32ea GE NX650 Crystal sensor (h/v mount) 8-10yr ($4)
+    meditation room
+    den 1 
+    den 2
+    bedroom 1
+    bedroom 2
+    study 1
+    study 2
+    garage
+    chalet
+58  2x29 Key fob with light ctrl and panic
+6   3x10x double stick tape
+30  Ion Micro Window Sensor for GE Wireless 5+yr lithium small
+    back door
+7   Ion-FDB75 3/4" Forstner Drill Bit
+30  Ion Micro Door Sensor for GE Wireless 5+yr lithium small
+    front door
+86  2x43  Garage door sensor (tilt activated, not temperature sensitive)
+16  Indoor/outdoor low profile siren
+19  Simon XT hardwire exterior siren
+5   Ademco Recessed Rollerball Staggered "T" Mini Plunger Switch with Terminals
+585 Total
+
+QUESTIONS
+on only when sensor opened, or whenever it is open
+
+20  GE Security Simon 3 X-10 Powerline Carrier Transformer 60-913
+28  X-10 Wireless Powerhorn Plug-In Siren
+38  2x X-10 appliance module
+90  Remote touch pad
+82  smoke detector
+199 GSM module
+30  GE 60-688-95 Wireless Micro Door Window Sensor 5-8yr coin lith ($3)
+30  Simon XT SAW Wireless Door/Window Transmitter 2AAA 4-6yr
+43  Small key fob arm/disarm, 52  Encrypted key fob
+67  Pet immune motion detector
+

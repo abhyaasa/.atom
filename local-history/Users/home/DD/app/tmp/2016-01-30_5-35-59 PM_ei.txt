@@ -1,0 +1,18 @@
+g ei output:
+...
+/Users/home/DD/app/platforms/ios/Abhyaasa/Classes/MainViewController.m:109:19: error: no visible @interface for 'CDVViewController' declares the selector 'webViewDidFinishLoad:'
+    return [super webViewDidFinishLoad:theWebView];
+            ~~~~~ ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC build/Abhyaasa.build/Debug-iphonesimulator/Abhyaasa.build/Objects-normal/i386/MainViewController.o Abhyaasa/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+ERROR building one of the platforms: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/home/DD/app/platforms/ios/cordova/build-debug.xcconfig,-project,Abhyaasa.xcodeproj,ARCHS=i386,-target,Abhyaasa,-configuration,Debug,-sdk,iphonesimulator,build,VALID_ARCHS=i386,CONFIGURATION_BUILD_DIR=/Users/home/DD/app/platforms/ios/build/emulator,SHARED_PRECOMPS_DIR=/Users/home/DD/app/platforms/ios/build/sharedpch
+You may not have the required environment or OS to build this project
+Error: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/home/DD/app/platforms/ios/cordova/build-debug.xcconfig,-project,Abhyaasa.xcodeproj,ARCHS=i386,-target,Abhyaasa,-configuration,Debug,-sdk,iphonesimulator,build,VALID_ARCHS=i386,CONFIGURATION_BUILD_DIR=/Users/home/DD/app/platforms/ios/build/emulator,SHARED_PRECOMPS_DIR=/Users/home/DD/app/platforms/ios/build/sharedpch
+[18:00:29] Finished 'build' after 28 s
+~/DD/app$

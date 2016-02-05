@@ -1,0 +1,209 @@
+STARTUP
+
+$ cd f/a
+$ g si
+
+
+XCODE
+
+plug in iphone, double click platforms/ios/app.xcodeproj
+
+
+UPDATING
+
+See dev-notes.md
+
+
+CHROME CANARY
+
+cmd-opt-I (or J) opens developer console: Device icon, upper right of dev window,
+toggles black rulers. JS debugger command for code breakpoint
+
+Extensions for development
+- Clear Cache: on/off icon, clears cache with every reload.
+  Rt-click icon > options > enable on start
+- Cache Killer (recycling icon), rt click > options for data to remove
+- Web Developer (gear icon)
+- AngularJS Batarang (in AngularJS tab in Developer Tools window)
+
+Others extensions that may be installed: Markdown Preview, AdBlock, Firebug Lite, and
+Google Docs, Docs Offline, Sheets, and Slides. Also Web developer.
+
+
+PLUNKER
+
+shared plunks (like codepen but free)
+
+
+ATOM
+
+To start, open project Svadhyaya, expand www/views.
+See tools/atom.txt.
+
+
+BASH
+
+# alias is='ionic serve -c -s -l --browser /Applications/Utilities/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias isl='ionic serve -c -l --browser /Applications/Google\ Chrome\ Canary.app'
+alias isi='ionic serve -c -t ios --browser /Applications/Google\ Chrome\'
+alias isa='ionic serve -c -t android --browser /Applications/Google\ Chrome\
+Canary.app'
+alias is='ionic serve -c'
+alias ws='webdriver-manager start'
+alias ks='karma start'
+alias pr='protractor protractor.conf.js'
+# dgulp: see http://www.greg5green.com/blog/debugging-gulp-js-tasks/
+# alias dgulp='node-debug /usr/local/bin/gulp'
+alias dgulp='node debug /usr/local/bin/gulp'
+
+
+DEVDOCS
+
+chrome DD bookmark for offline devdocs.io
+
+
+BOWER
+
+bower install
+
+if "bower update" has extra-resolution message, remove related resolution
+in bower.json.
+
+
+NVM
+
+install nvm: curl -o-
+https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+
+nvm install stable
+nvm alias default stable
+
+
+BREW / RUBY
+
+see tools/rvm.txt
+
+
+GULP
+
+Run "gulp help" for a list of project gulp commands. Run gulp only in the project directory.
+
+
+NODE
+
+update http://theholmesoffice.com/node-js-fundamentals-how-to-upgrade-the-node-js-version/
+
+
+NPM
+
+npm install
+npm test
+
+
+IONIC
+
+see ionic/ionic.txt
+
+
+PYTHON
+
+Version 2.7.
+
+linter-pylint has lots of deprecation warnings.
+
+flake8 linter installed, but no OpenStack guideline support as "pip install hacking"
+fails.
+
+
+PRINTING
+
+xcode prints unprintable using dprint, lpr, etc.
+
+
+RUSTHON -- not presently used
+
+home:~/DD/Rusthon
+506# python rusthon.py ./examples/hello_angular.md  --tar
+hello_angular
+
+
+MARKDOWN
+
+https://pythonhosted.org/Markdown/index.html
+Basic syntax: http://daringfireball.net/projects/markdown/syntax
+Extensions: https://pythonhosted.org/Markdown/extensions/index.html
+
+~/bin/xmd adds extensions
+Usage: xmd foo.md >foo.html
+
+Had to add importlib to python2.6.
+
+/f/s$ which marked
+/Users/home/.nvm/versions/node/v0.12.7/bin/marked
+~/f/s$ which markdown_py
+/usr/local/bin/markdown_py
+
+
+BRACKETS -- no longer used
+
+see ./brackets.txt
+
+
+SASS
+
+gem install sass
+
+
+JSHint
+
+~/.jshintrc: set unused false
+
+
+JAVASCRIPT
+
+function s() {}
+s.prototype.f=function...
+o=new s()
+_.extendOwn(r, s)
+return r
+
+
+TESTING: KARMA, JASMINE, PROTRACTOR, ANGULAR-MOCKS
+
+alias ws='webdriver-manager start' (for e2e tests)
+alias ks='karma start' (for unit tests, don't let run w/o browser)
+alias is='ionic serve -c'
+Kill these with ctrl-C.
+
+karma start [<configFile>] [<options>]
+
+describe.only and it.only
+
+xx.js jasmine unit test file: xx.uspec.js
+add www/js/load.js files to karma.conf.js
+
+For protractor, run isi, ws, and then pr in separate shell windows.
+xx.js jasmine e2e test file: xx.espec.js under www/views
+
+
+
+ITERM
+
+clear buffer cmd-k
+
+
+EMACS
+
+C-M-\ execute last keyboard macro
+
+
+DGENI
+
+https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation
+
+
+GIT
+
+New project report:
+  $ git init; git add .; git commit -m 'initial commit comment'
+  Github desktop: add local repository, repository push

@@ -1,0 +1,134 @@
+~/DD/lib/ionic/myapp$ ionic platform add ios
+Updated the hooks directory to have execute permissions
+Downloading Default Ionic Resources
+Downloading: https://github.com/driftyco/ionic-default-resources/archive/master.zip
+[=============================]  100%  0.0s
+Done adding default Ionic resources
+Adding icons for platform: ios
+Error: Platform ios already added.
+~/DD/lib/ionic/myapp$
+------------------------------------------------------------------------------
+~/DD/lib/ionic/myapp$ cd
+~$ cd f/a
+~/f/a$ rm -rf platforms
+~/f/a$ ionic platform add ios
+Updated the hooks directory to have execute permissions
+Running command: /Users/home/f/a/hooks/before_platform_add/init_directories.js /Users/home/f/a
+Adding ios project...
+Running command: /Users/home/.cordova/lib/npm_cache/cordova-ios/3.9.2/package/bin/create /Users/home/f/a/platforms/ios com.github.abhyaasa_app Abhyaasa --cli
+iOS project created with cordova-ios@3.9.2
+Running command: /Users/home/f/a/hooks/after_prepare/010_add_platform_class.js /Users/home/f/a
+add to body class: platform-ios
+Running command: /Users/home/f/a/hooks/after_prepare/020_remove_sass_from_platforms.js /Users/home/f/a
+Installing "com.ionic.keyboard" for ios
+Installing "cordova-plugin-console" for ios
+Installing "cordova-plugin-device" for ios
+Installing "cordova-plugin-file" for ios
+
+The Android Persistent storage location now defaults to "Internal". Please check this plugins README to see if you application needs any changes in its config.xml.
+
+If this is a new application no changes are required.
+
+If this is an update to an existing application that did not specify an "AndroidPersistentFileLocation" you may need to add:
+
+      "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
+
+to config.xml in order for the application to find previously stored files.
+
+
+Installing "cordova-plugin-media" for ios
+Dependent plugin "cordova-plugin-file" already installed on ios.
+Installing "cordova-plugin-splashscreen" for ios
+Installing "ionic-plugin-keyboard" for ios
+Installing "uk.co.whiteoctober.cordova.appversion" for ios
+Running command: /Users/home/f/a/hooks/after_platform_add/010_install_plugins.js /Users/home/f/a
+util.puts: Use console.log instead
+Fetching plugin "cordova-plugin-splashscreen" via npm
+Plugin "cordova-plugin-splashscreen" already installed on ios.
+shell.js: internal error
+Error: ENOENT, no such file or directory '/Users/home/f/a/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystemPaths.js'
+    at Error (native)
+    at Object.fs.lstatSync (fs.js:792:18)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:20:23)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at /Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:141:7
+    at Array.forEach (native)
+    at Object._rm (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:105:9)
+    at Object.rm (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/common.js:186:23)
+
+util.puts: Use console.log instead
+Fetching plugin "cordova-plugin-media" via npm
+Plugin "cordova-plugin-media" already installed on ios.
+shell.js: internal error
+Error: ENOENT, no such file or directory '/Users/home/f/a/platforms/ios/www/data/flavor/media/deck1/buddyShelter550w.jpg'
+    at Error (native)
+    at Object.fs.lstatSync (fs.js:792:18)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:20:23)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at rmdirSyncRecursive (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:23:7)
+    at /Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:141:7
+    at Array.forEach (native)
+    at Object._rm (/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/src/rm.js:105:9)
+
+util.puts: Use console.log instead
+Fetching plugin "cordova-plugin-console" via npm
+Plugin "cordova-plugin-console" already installed on ios.
+Running command: /Users/home/f/a/hooks/after_plugin_add/010_register_plugin.js /Users/home/f/a
+
+util.puts: Use console.log instead
+Fetching plugin "cordova-plugin-device" via npm
+Plugin "cordova-plugin-device" already installed on ios.
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android
+
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources
+
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor
+
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data
+
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android/splash
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources/android
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor/resources
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data/flavor
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www/data
+rm: could not remove directory (code ENOTEMPTY): /Users/home/f/a/platforms/ios/www
+
+mkdir: path already exists: /Users/home/f/a/platforms/ios/www
+
+Running command: /Users/home/f/a/hooks/after_plugin_add/010_register_plugin.js /Users/home/f/a
+
+util.puts: Use console.log instead
+Fetching plugin "uk.co.whiteoctober.cordova.appversion" via npm
+Fetching plugin "uk.co.whiteoctober.cordova.appversion" via cordova plugins registry
+Plugin "uk.co.whiteoctober.cordova.appversion" already installed on ios.
+Running command: /Users/home/f/a/hooks/after_plugin_add/010_register_plugin.js /Users/home/f/a
+
+util.puts: Use console.log instead
+Fetching plugin "ionic-plugin-keyboard" via npm
+Plugin "ionic-plugin-keyboard" already installed on ios.
+Running command: /Users/home/f/a/hooks/after_plugin_add/010_register_plugin.js /Users/home/f/a
+
+util.puts: Use console.log instead
+Fetching plugin "cordova-plugin-file" via npm
+Plugin "cordova-plugin-file" already installed on ios.
+Running command: /Users/home/f/a/hooks/after_plugin_add/010_register_plugin.js /Users/home/f/a
+
+Saving platform to package.json file
+A platform already exists - now updating the entry: ios ios
+~/f/a$

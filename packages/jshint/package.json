@@ -1,6 +1,6 @@
 {
   "name": "jshint",
-  "version": "1.8.0",
+  "version": "1.8.3",
   "description": "Validate JavaScript with JSHint. In realtime or on save. Supports JSX (React).",
   "license": "MIT",
   "repository": {
@@ -65,21 +65,21 @@
     "url": "https://github.com/sindresorhus/atom-jshint/issues"
   },
   "homepage": "https://github.com/sindresorhus/atom-jshint#readme",
-  "_id": "jshint@1.8.0",
-  "_shasum": "e23bc0404457506eda69ddad1e18891b5a51d460",
-  "_resolved": "file:../d-115827-7431-kqkvb6/package.tgz",
-  "_from": "../d-115827-7431-kqkvb6/package.tgz",
+  "_id": "jshint@1.8.3",
+  "_shasum": "7cdf6bf5fa14aaa94f3d432329a0773c092bbd89",
+  "_resolved": "file:../d-1151010-9187-1l3nxc9/package.tgz",
+  "_from": "../d-1151010-9187-1l3nxc9/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
       {
         "name": "event-kit",
-        "version": "1.3.0",
+        "version": "1.4.1",
         "path": "node_modules/event-kit/lib/event-kit.js"
       },
       {
         "name": "grim",
-        "version": "1.4.2",
+        "version": "1.5.0",
         "path": "node_modules/event-kit/node_modules/grim/lib/grim.js"
       },
       {
@@ -99,8 +99,18 @@
       },
       {
         "name": "es5-ext",
-        "version": "0.10.7",
+        "version": "0.10.8",
         "path": "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/index.js"
+      },
+      {
+        "name": "es6-iterator",
+        "version": "2.0.0",
+        "path": "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/index.js"
+      },
+      {
+        "name": "es6-symbol",
+        "version": "3.0.1",
+        "path": "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/index.js"
       },
       {
         "name": "es6-iterator",
@@ -259,12 +269,12 @@
       },
       {
         "name": "brace-expansion",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "path": "node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/index.js"
       },
       {
         "name": "balanced-match",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "path": "node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js"
       },
       {
@@ -294,17 +304,37 @@
       },
       {
         "name": "commoner",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/main.js"
       },
       {
         "name": "commander",
-        "version": "2.5.1",
+        "version": "2.9.0",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/index.js"
       },
       {
+        "name": "graceful-readlink",
+        "version": "1.0.1",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/node_modules/graceful-readlink/index.js"
+      },
+      {
+        "name": "detective",
+        "version": "4.3.1",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/index.js"
+      },
+      {
+        "name": "acorn",
+        "version": "1.2.2",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/dist/acorn.js"
+      },
+      {
+        "name": "defined",
+        "version": "1.0.0",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/defined/index.js"
+      },
+      {
         "name": "glob",
-        "version": "4.2.2",
+        "version": "5.0.15",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/glob.js"
       },
       {
@@ -324,18 +354,23 @@
       },
       {
         "name": "minimatch",
-        "version": "1.0.0",
+        "version": "3.0.0",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/minimatch.js"
       },
       {
-        "name": "lru-cache",
-        "version": "2.7.0",
-        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js"
+        "name": "brace-expansion",
+        "version": "1.1.1",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js"
       },
       {
-        "name": "sigmund",
-        "version": "1.0.1",
-        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/sigmund/sigmund.js"
+        "name": "balanced-match",
+        "version": "0.2.1",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js"
       },
       {
         "name": "once",
@@ -348,19 +383,19 @@
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js"
       },
       {
+        "name": "path-is-absolute",
+        "version": "1.0.0",
+        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/path-is-absolute/index.js"
+      },
+      {
         "name": "graceful-fs",
-        "version": "3.0.8",
+        "version": "4.1.2",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/graceful-fs.js"
       },
       {
         "name": "iconv-lite",
-        "version": "0.4.12",
+        "version": "0.4.13",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/lib/index.js"
-      },
-      {
-        "name": "install",
-        "version": "0.1.8",
-        "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/install/main.js"
       },
       {
         "name": "mkdirp",
@@ -379,12 +414,12 @@
       },
       {
         "name": "q",
-        "version": "1.1.2",
+        "version": "1.4.1",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/q/q.js"
       },
       {
         "name": "recast",
-        "version": "0.10.33",
+        "version": "0.10.37",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/main.js"
       },
       {
@@ -399,7 +434,7 @@
       },
       {
         "name": "source-map",
-        "version": "0.5.1",
+        "version": "0.5.3",
         "path": "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/source-map.js"
       },
       {
@@ -692,6 +727,21 @@
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/math/trunc/index.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/math/trunc/is-implemented.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/math/trunc/shim.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/#/chain.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/array.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/for-of.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/get.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/index.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/is-iterable.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/string.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/valid-iterable.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/implement.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/index.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/is-implemented.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/is-native-implemented.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/is-symbol.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/polyfill.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/validate-symbol.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/#/index.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/#/pad.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/epsilon/implement.js",
@@ -710,6 +760,7 @@
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-nan/index.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-nan/is-implemented.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-nan/shim.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-natural.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-number.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-safe-integer/implement.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/number/is-safe-integer/index.js",
@@ -739,6 +790,8 @@
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/eq.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/every.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/filter.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/find-key.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/find.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/first-key.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/flatten.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/object/for-each.js",
@@ -846,6 +899,7 @@
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/#/starts-with/index.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/#/starts-with/is-implemented.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/#/starts-with/shim.js",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/#/uncapitalize.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/format-method.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/from-code-point/implement.js",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/string/from-code-point/index.js",
@@ -1431,6 +1485,42 @@
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/lib/watcher.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/main.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/node_modules/graceful-readlink/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/bench/detect.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/example/strings.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/example/strings_src.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/bin/build-acorn.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/bin/generate-identifier-regex.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/dist/acorn.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/dist/acorn_csp.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/dist/acorn_loose.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/dist/walk.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/expression.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/identifier.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/location.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/acorn_loose.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/expression.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/parseutil.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/state.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/statement.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/loose/tokenize.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/lval.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/node.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/options.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/parseutil.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/state.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/statement.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/tokencontext.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/tokenize.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/tokentype.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/util.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/walk/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/src/whitespace.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/defined/example/defined.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/defined/index.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/common.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/glob.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inflight/inflight.js",
@@ -1440,14 +1530,19 @@
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inherits/inherits_browser.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inherits/test.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/minimatch.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/sigmund/sigmund.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/example.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/example.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/once/once.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/path-is-absolute/index.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/sync.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/fs.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/graceful-fs.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/legacy-streams.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/polyfills.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/encodings/dbcs-codec.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/encodings/dbcs-data.js",
@@ -1462,9 +1557,6 @@
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/lib/extend-node.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/lib/index.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/lib/streams.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/install/install.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/install/install.min.js",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/install/main.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/mkdirp/bin/cmd.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/mkdirp/examples/pow.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/mkdirp/index.js",
@@ -1503,6 +1595,9 @@
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/esprima-fb/bin/esparse.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/esprima-fb/bin/esvalidate.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/esprima-fb/esprima.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/dist/source-map.debug.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/dist/source-map.js",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/dist/source-map.min.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/lib/array-set.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/lib/base64-vlq.js",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/recast/node_modules/source-map/lib/base64.js",
@@ -2283,6 +2378,8 @@
       ".json": [
         "node_modules/event-kit/api.json",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/d/package.json",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/package.json",
+        "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/package.json",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/package.json",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator/package.json",
         "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol/package.json",
@@ -2336,15 +2433,21 @@
         "node_modules/jshint/node_modules/shelljs/package.json",
         "node_modules/jshint/package.json",
         "node_modules/jshint-jsx/node_modules/lodash/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/node_modules/graceful-readlink/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/acorn/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/node_modules/defined/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inflight/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/inherits/package.json",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/once/node_modules/wrappy/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/once/package.json",
+        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/path-is-absolute/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/graceful-fs/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/encodings/tables/big5-added.json",
@@ -2356,7 +2459,6 @@
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/encodings/tables/gbk-added.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/encodings/tables/shiftjis.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/iconv-lite/package.json",
-        "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/install/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/mkdirp/node_modules/minimist/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/mkdirp/package.json",
         "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/private/package.json",
@@ -2610,8 +2712,31 @@
           "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/test/string/raw"
         ],
         "dependencies": {
-          "es6-iterator": "~0.1.3",
-          "es6-symbol": "~2.0.1"
+          "es6-iterator": "2",
+          "es6-symbol": "3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/#",
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator",
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/test/#",
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/test"
+        ],
+        "dependencies": {
+          "d": "^0.1.1",
+          "es5-ext": "^0.10.7",
+          "es6-symbol": "3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol",
+          "node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/test"
+        ],
+        "dependencies": {
+          "d": "~0.1.1",
+          "es5-ext": "~0.10.8"
         }
       },
       {
@@ -2788,8 +2913,7 @@
       },
       {
         "paths": [
-          "node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion",
-          "node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/test"
+          "node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion"
         ],
         "dependencies": {
           "balanced-match": "^0.2.0",
@@ -2855,22 +2979,39 @@
       {
         "paths": [
           "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/lib",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/test",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/test/source",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/test/source/tests",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/test/source/widget"
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner"
         ],
         "dependencies": {
-          "q": "~1.1.2",
-          "recast": "~0.10.0",
-          "commander": "~2.5.0",
-          "graceful-fs": "~3.0.4",
-          "glob": "~4.2.1",
-          "mkdirp": "~0.5.0",
-          "private": "~0.1.6",
-          "install": "~0.1.7",
-          "iconv-lite": "~0.4.5"
+          "commander": "^2.5.0",
+          "detective": "^4.3.1",
+          "glob": "^5.0.15",
+          "graceful-fs": "^4.1.2",
+          "iconv-lite": "^0.4.5",
+          "mkdirp": "^0.5.0",
+          "private": "^0.1.6",
+          "q": "^1.1.2",
+          "recast": "^0.10.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/commander"
+        ],
+        "dependencies": {
+          "graceful-readlink": ">= 1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/bench",
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/example",
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective",
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/test",
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/detective/test/files"
+        ],
+        "dependencies": {
+          "acorn": "^1.0.3",
+          "defined": "^1.0.0"
         }
       },
       {
@@ -2880,8 +3021,9 @@
         "dependencies": {
           "inflight": "^1.0.4",
           "inherits": "2",
-          "minimatch": "^1.0.0",
-          "once": "^1.3.0"
+          "minimatch": "2 || 3",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
         }
       },
       {
@@ -2895,12 +3037,19 @@
       },
       {
         "paths": [
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch",
-          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/test"
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch"
         ],
         "dependencies": {
-          "lru-cache": "2",
-          "sigmund": "~1.0.0"
+          "brace-expansion": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/jshint-jsx/node_modules/react-tools/node_modules/commoner/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^0.2.0",
+          "concat-map": "0.0.1"
         }
       },
       {

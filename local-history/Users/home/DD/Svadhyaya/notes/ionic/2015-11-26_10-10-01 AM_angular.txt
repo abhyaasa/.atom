@@ -1,0 +1,3 @@
+$scope.$on('$ionicView.enter', function() {...}
+
+dev console $rootScope: angular.element($0).scope()

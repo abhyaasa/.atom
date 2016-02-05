@@ -4,11 +4,17 @@
     &.ripple-accent-color {
         .tab-bar {
             .tab {
-                &::before {
+                .ink {
                     background-color: fade(@color, 50%);
+                }
+                &.modified:not(:hover) .title::after {
+                    border-color: fade(@color, 87%);
                 }
             }
         }
+    }
+    .btn.btn-primary {
+        .button-variant(@color, #FFF);
     }
     .tab-bar {
         .tab {
@@ -17,8 +23,16 @@
                     background-color: @color;
                 }
             }
-            &.modified:not(:hover) .close-icon {
-                border-color: @color;
+            &.modified:hover .close-icon {
+                color: @color;
+            }
+            &.modified:not(:hover) {
+                .close-icon {
+                    border-color: @color;
+                }
+                .title::after {
+                    border-color: @color;
+                }
             }
         }
         .placeholder::after {
@@ -52,6 +66,10 @@
     .select-list ol.list-group, &.select-list ol.list-group {
         li.selected {
             background-color: @color;
+            color: lighten(@color, 50%);
+        }
+        li {
+            color: @text-color;
         }
     }
     .settings-view {
@@ -90,7 +108,7 @@
             }
         }
     }
-    .link {
+    .link, .text-info {
         color: @color;
 
         &:hover {
@@ -108,7 +126,6 @@
     }
     atom-text-editor[mini].is-focused,
     atom-text-editor[mini].is-focused::shadow {
-
         &:before {
            background-color: @color;
            transform: scaleX(1);
@@ -155,6 +172,9 @@
         .character-match {
             .highlight(@app-background-color);
         }
+        &.select-list.popover-list .suggestion-description-more-link {
+            color: @color;
+        }
     }
     .markdown-preview a {
         color: @color;
@@ -164,23 +184,23 @@
 .light-accent(@accent) when (lightness(@accent) >= 60%) {
     .select-list ol.list-group, &.select-list ol.list-group {
         li {
-            color: @text-color-subtle;
+            color: @text-color;
 
-            &.selected {
-                background-color: @accent;
-                color: darken(@accent, 40%) !important;
+            span {
+                color: @text-color;
+            }
+        }
+        li.selected {
+            background-color: @accent;
+            color: darken(@accent, 40%) !important;
 
-                &.two-lines {
-                    .primary-line, .secondary-line {
-                        color: darken(@accent, 40%) !important;
-                    }
-                }
-                span {
+            &.two-lines {
+                .primary-line, .secondary-line {
                     color: darken(@accent, 40%) !important;
                 }
             }
             span {
-                color: @text-color-subtle;
+                color: darken(@accent, 40%) !important;
             }
         }
     }

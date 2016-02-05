@@ -1,0 +1,48 @@
+'use strict';
+
+angular.module('app')
+
+.controller('DeckController', function ($rootScope, $scope, $state, $log,
+    getData, config, _, nextCard) {
+})
+
+.controller('DeckHelpController', function ($scope, $rootScope) {})
+
+.service('deckFilter', function (_) {
+    return function (questions) {
+        // TODO use filter settings
+        return _.range(0, questions.length);
+    };
+})
+
+.service('deckSetup', function ($rootScope, $state, $log, getData, deckFilter, config,
+  nextCard) {
+    return function (deckName) {
+        $log.debug('DeckController', JSON.stringify(deckName));
+        var filter_settings = {
+            max: 50,
+            min: 50,
+            required: [],
+            exclude: [],
+            include: []
+        };
+        getData('flavors/' + config.flavor + '/library/' + deckName.fullName)
+        .then(function (promise) {
+            $rootScope.questions = promise.data;
+            $rootScope.deck = {
+                fullName: deckName.fullName,
+                displayName: deckName.displayName,
+                right: [],
+                wrong: [],
+                close: [],
+                hints: 0,
+                skipped: [],
+                remaining: deckFilter($rootScope.questions),
+                filter_settings: filter_settings
+            };
+            $log.debug('deck num questions', $rootScope.questions.length);
+            nextCard();
+            $state.go('tabs.card');
+        });
+    };
+});

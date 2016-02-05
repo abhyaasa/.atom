@@ -1,0 +1,47 @@
+Capture audio
+  start applications/soundflower/flowerbed.app
+  settings > audio > output Soundflower (2ch)
+  Audacity 2ch input
+
+Max app: bulk file format conversion
+
+------------
+
+Move mp3 to podcasts in itunes:
+
+To make mp3 files into podcasts:
+
+First, in itunes, find the mp3 file(s) in the music section, and hit edit,
+then delete. It will tell you that 
+it will remove it from itunes and the iphone, click OK.
+Then it will ask you if you want to put the file in the trash or keep the file
+in the music folder. Keep the file. This will remove it from itunes, and
+the iphone, which is what you want.  
+
+Second, open up a finder window on the mac. Navigate to the itunes music folder,
+which is in machd/users/johnsmith/music/itunes/itunes music. Then open
+another finder window alongside the one that is showing the itunes music
+folder. In that finder window, create a unique named new folder on the
+desktop, such as "movedmusic". Now, go to the itunes music folder and drag
+the mp3 file over to the "movedmusic" folder and drop it there. Now, the
+mp3 file is no longer in itunes at all. 
+
+Third, go back to itunes main screen, click File, then "add to library". It
+will open a mini finder window of it's own. Navigate to the "movedmusic"
+folder you created on your desktop and select the mp3 file, and let it
+import into itunes.  Don't worry about where itunes puts it. iTunes will
+put it in "songs", but that is ok. It is still seen as "new" to itunes.
+
+Fourth, go to the "music" at the top left of itunes menu. Find the newly
+imported mp3 file. Right click and select "get info". Open "options" and
+change it from "music" to "podcast" and hit OK. Now, you will see it
+disappear from the main screen in music. Go to podcasts on the left menu,
+and it will now be in podcasts. But WAIT! There is one more step to do or
+it won't sync to your iphone. Now go to the iphone on the left hand menu
+and select it under "devices". Then go to the iphone's "podcasts" tab, and
+you'll see the mp3 file you just added as a podcast. Make sure you put a
+check in the checkbox, that will tell itunes to sync your newly added mp3
+PODCAST to your iphone. Then go over to File at the top of itunes and
+select "sync iphone". After the iphone syncs, your mp3 will be on your
+iphone in the podcast menu, and not in the songs menu! 
+  

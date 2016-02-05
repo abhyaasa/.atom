@@ -1,7 +1,7 @@
 {
   "name": "autoprefixer",
-  "version": "3.1.0",
-  "description": "Prefix CSS",
+  "version": "3.2.0",
+  "description": "Prefix CSS and SCSS",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,13 +24,15 @@
   },
   "keywords": [
     "css",
+    "scss",
     "prefix",
     "prefixer"
   ],
   "dependencies": {
-    "autoprefixer": "^6.0.0",
-    "postcss": "^5.0.4",
-    "postcss-safe-parser": "^1.0.1"
+    "autoprefixer": "^6.3.1",
+    "postcss": "^5.0.14",
+    "postcss-safe-parser": "^1.0.4",
+    "postcss-scss": "^0.1.3"
   },
   "devDependencies": {
     "xo": "*"
@@ -41,37 +43,47 @@
       "atom"
     ]
   },
-  "readme": "# autoprefixer\n\n> Prefix CSS with [Autoprefixer](https://github.com/ai/autoprefixer)\n\n\n## Install\n\n```\n$ apm install autoprefixer\n```\n\nOr, Settings → Install → Search for `autoprefixer`\n\n\n## Usage\n\n- Open the Command Palette and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284892/51b999b2-9fce-11e3-9e9d-5e6a9cb4e933.gif)\n\n- In an HTML file, select the CSS, open the Command Palette, and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284893/51e4bd18-9fce-11e3-8b1a-282f664593e9.gif)\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readme": "# autoprefixer\n\n> Prefix CSS and SCSS with [Autoprefixer](https://github.com/ai/autoprefixer)\n\n\n## Install\n\n```\n$ apm install autoprefixer\n```\n\nOr, Settings → Install → Search for `autoprefixer`\n\n\n## Usage\n\n- Open the Command Palette and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284892/51b999b2-9fce-11e3-9e9d-5e6a9cb4e933.gif)\n\n- In an HTML file, select the CSS, open the Command Palette, and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284893/51e4bd18-9fce-11e3-8b1a-282f664593e9.gif)\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
   "readmeFilename": "readme.md",
   "bugs": {
     "url": "https://github.com/sindresorhus/atom-autoprefixer/issues"
   },
   "homepage": "https://github.com/sindresorhus/atom-autoprefixer#readme",
-  "_id": "autoprefixer@3.1.0",
-  "_shasum": "537fbe4b95c6dd346188b9878bff44fb61208d4f",
-  "_resolved": "file:../d-115813-6593-1t5csk0/package.tgz",
-  "_from": "../d-115813-6593-1t5csk0/package.tgz",
+  "_id": "autoprefixer@3.2.0",
+  "_shasum": "4e596883fe759fba63470e295a060a37f8610a83",
+  "_resolved": "file:../d-116030-28493-ungi0r/package.tgz",
+  "_from": "../d-116030-28493-ungi0r/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
       {
         "name": "autoprefixer",
-        "version": "6.0.2",
+        "version": "6.3.1",
         "path": "node_modules/autoprefixer/lib/autoprefixer.js"
       },
       {
         "name": "browserslist",
-        "version": "1.0.0",
+        "version": "1.1.1",
         "path": "node_modules/autoprefixer/node_modules/browserslist/index.js"
       },
       {
+        "name": "normalize-range",
+        "version": "0.1.2",
+        "path": "node_modules/autoprefixer/node_modules/normalize-range/index.js"
+      },
+      {
         "name": "num2fraction",
-        "version": "1.2.1",
+        "version": "1.2.2",
         "path": "node_modules/autoprefixer/node_modules/num2fraction/index.js"
       },
       {
+        "name": "postcss-value-parser",
+        "version": "3.2.3",
+        "path": "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/index.js"
+      },
+      {
         "name": "postcss",
-        "version": "5.0.5",
+        "version": "5.0.14",
         "path": "node_modules/postcss/lib/postcss.js"
       },
       {
@@ -81,12 +93,12 @@
       },
       {
         "name": "source-map",
-        "version": "0.5.0",
+        "version": "0.5.3",
         "path": "node_modules/postcss/node_modules/source-map/source-map.js"
       },
       {
         "name": "supports-color",
-        "version": "3.1.1",
+        "version": "3.1.2",
         "path": "node_modules/postcss/node_modules/supports-color/index.js"
       },
       {
@@ -96,8 +108,13 @@
       },
       {
         "name": "postcss-safe-parser",
-        "version": "1.0.1",
+        "version": "1.0.4",
         "path": "node_modules/postcss-safe-parser/lib/safe-parse.js"
+      },
+      {
+        "name": "postcss-scss",
+        "version": "0.1.3",
+        "path": "node_modules/postcss-scss/lib/scss-syntax.js"
       }
     ],
     "extensions": {
@@ -106,12 +123,12 @@
         "node_modules/autoprefixer/data/prefixes.js",
         "node_modules/autoprefixer/lib/at-rule.js",
         "node_modules/autoprefixer/lib/autoprefixer.js",
+        "node_modules/autoprefixer/lib/brackets.js",
         "node_modules/autoprefixer/lib/browsers.js",
         "node_modules/autoprefixer/lib/declaration.js",
         "node_modules/autoprefixer/lib/hacks/align-content.js",
         "node_modules/autoprefixer/lib/hacks/align-items.js",
         "node_modules/autoprefixer/lib/hacks/align-self.js",
-        "node_modules/autoprefixer/lib/hacks/appearance.js",
         "node_modules/autoprefixer/lib/hacks/background-size.js",
         "node_modules/autoprefixer/lib/hacks/block-logical.js",
         "node_modules/autoprefixer/lib/hacks/border-image.js",
@@ -119,7 +136,7 @@
         "node_modules/autoprefixer/lib/hacks/break-props.js",
         "node_modules/autoprefixer/lib/hacks/cross-fade.js",
         "node_modules/autoprefixer/lib/hacks/display-flex.js",
-        "node_modules/autoprefixer/lib/hacks/fill-available.js",
+        "node_modules/autoprefixer/lib/hacks/fill.js",
         "node_modules/autoprefixer/lib/hacks/filter-value.js",
         "node_modules/autoprefixer/lib/hacks/filter.js",
         "node_modules/autoprefixer/lib/hacks/flex-basis.js",
@@ -133,16 +150,21 @@
         "node_modules/autoprefixer/lib/hacks/flex.js",
         "node_modules/autoprefixer/lib/hacks/fullscreen.js",
         "node_modules/autoprefixer/lib/hacks/gradient.js",
+        "node_modules/autoprefixer/lib/hacks/grid-end.js",
+        "node_modules/autoprefixer/lib/hacks/grid-row-align.js",
+        "node_modules/autoprefixer/lib/hacks/grid-start.js",
+        "node_modules/autoprefixer/lib/hacks/grid-template.js",
         "node_modules/autoprefixer/lib/hacks/image-rendering.js",
         "node_modules/autoprefixer/lib/hacks/image-set.js",
         "node_modules/autoprefixer/lib/hacks/inline-logical.js",
         "node_modules/autoprefixer/lib/hacks/justify-content.js",
+        "node_modules/autoprefixer/lib/hacks/justify-items.js",
         "node_modules/autoprefixer/lib/hacks/mask-border.js",
         "node_modules/autoprefixer/lib/hacks/order.js",
         "node_modules/autoprefixer/lib/hacks/pixelated.js",
         "node_modules/autoprefixer/lib/hacks/placeholder.js",
+        "node_modules/autoprefixer/lib/hacks/text-emphasis-position.js",
         "node_modules/autoprefixer/lib/hacks/transform-decl.js",
-        "node_modules/autoprefixer/lib/hacks/transform-value.js",
         "node_modules/autoprefixer/lib/hacks/writing-mode.js",
         "node_modules/autoprefixer/lib/info.js",
         "node_modules/autoprefixer/lib/old-selector.js",
@@ -153,11 +175,18 @@
         "node_modules/autoprefixer/lib/resolution.js",
         "node_modules/autoprefixer/lib/selector.js",
         "node_modules/autoprefixer/lib/supports.js",
+        "node_modules/autoprefixer/lib/transition.js",
         "node_modules/autoprefixer/lib/utils.js",
         "node_modules/autoprefixer/lib/value.js",
         "node_modules/autoprefixer/node_modules/browserslist/cli.js",
         "node_modules/autoprefixer/node_modules/browserslist/index.js",
+        "node_modules/autoprefixer/node_modules/normalize-range/index.js",
         "node_modules/autoprefixer/node_modules/num2fraction/index.js",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/index.js",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/parse.js",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/stringify.js",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/unit.js",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/lib/walk.js",
         "node_modules/postcss/lib/at-rule.js",
         "node_modules/postcss/lib/comment.js",
         "node_modules/postcss/lib/container.js",
@@ -186,6 +215,9 @@
         "node_modules/postcss/node_modules/js-base64/base64.min.js",
         "node_modules/postcss/node_modules/js-base64/old/base64-1.7.js",
         "node_modules/postcss/node_modules/js-base64/package.js",
+        "node_modules/postcss/node_modules/source-map/dist/source-map.debug.js",
+        "node_modules/postcss/node_modules/source-map/dist/source-map.js",
+        "node_modules/postcss/node_modules/source-map/dist/source-map.min.js",
         "node_modules/postcss/node_modules/source-map/lib/array-set.js",
         "node_modules/postcss/node_modules/source-map/lib/base64-vlq.js",
         "node_modules/postcss/node_modules/source-map/lib/base64.js",
@@ -202,12 +234,19 @@
         "node_modules/postcss/node_modules/supports-color/node_modules/has-flag/index.js",
         "node_modules/postcss-safe-parser/lib/safe-parse.js",
         "node_modules/postcss-safe-parser/lib/safe-parser.js",
-        "node_modules/postcss-safe-parser/lib/safe-tokenize.js"
+        "node_modules/postcss-safe-parser/lib/safe-tokenize.js",
+        "node_modules/postcss-scss/lib/scss-parse.js",
+        "node_modules/postcss-scss/lib/scss-parser.js",
+        "node_modules/postcss-scss/lib/scss-stringifier.js",
+        "node_modules/postcss-scss/lib/scss-stringify.js",
+        "node_modules/postcss-scss/lib/scss-syntax.js",
+        "node_modules/postcss-scss/lib/scss-tokenize.js"
       ],
       ".json": [
         "node_modules/autoprefixer/node_modules/browserslist/package.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/data.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/aac.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/ac3-ec3.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/addeventlistener.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/ambient-light.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/apng.json",
@@ -220,6 +259,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/autofocus.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/background-attachment.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/background-img-opts.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/background-position-x-y.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/battery-status.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/beacon.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/blobbuilder.json",
@@ -227,6 +267,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/border-image.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/border-radius.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/broadcastchannel.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/brotli.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/calc.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/canvas-blending.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/canvas-text.json",
@@ -271,6 +312,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-hyphens.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-image-orientation.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-image-set.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-in-out-of-range.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-initial-value.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-letter-spacing.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-logical-props.json",
@@ -280,14 +322,18 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-media-scripting.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-mediaqueries.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-mixblendmode.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-motion-paths.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-opacity.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-page-break.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-placeholder-shown.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-placeholder.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-read-only-write.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-reflections.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-regions.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-repeating-gradients.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-resize.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-revert-value.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-scroll-behavior.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-sel2.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-sel3.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-selection.json",
@@ -297,6 +343,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-supports-api.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-table.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-text-align-last.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-text-spacing.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-textshadow.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-touch-action.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-transitions.json",
@@ -306,6 +353,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-zoom.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-boxsizing.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-cursors-grab.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-cursors-newer.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-cursors.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-tabsize.json",
@@ -326,6 +374,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/domcontentloaded.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/download.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/dragndrop.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/element-closest.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/eot.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/es5.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/es6-number.json",
@@ -335,6 +384,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/fileapi.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/filereader.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/filesystem.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/flac.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/flexbox.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/font-feature.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/font-kerning.json",
@@ -372,12 +422,15 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-color.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-datetime.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-email-tel-url.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-event.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-file-accept.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-file-multiple.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-minlength.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-number.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-pattern.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-placeholder.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-range.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/input-search.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/insertadjacenthtml.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/internationalization.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/intrinsic-width.json",
@@ -385,6 +438,12 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/jpegxr.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/json.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/kerning-pairs-ligatures.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-charcode.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-code.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-getmodifierstate.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-key.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-location.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/keyboardevent-which.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/lazyload.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/let.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/link-icon-png.json",
@@ -396,6 +455,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/matchesselector.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/matchmedia.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/mathml.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/maxlength.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/media-attribute.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/mediasource.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/menu.json",
@@ -413,6 +473,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/notifications.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/object-fit.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/object-observe.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/objectrtc.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/offline-apps.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/ogg-vorbis.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/ogv.json",
@@ -431,7 +492,9 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/progress.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/promises.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/proximity.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/proxy.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/publickeypinning.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/push-api.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/queryselector.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/referrer-policy.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/registerprotocolhandler.json",
@@ -459,6 +522,7 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/stream.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/stricttransportsecurity.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/style-scoped.json",
+        "node_modules/autoprefixer/node_modules/caniuse-db/features-json/subresource-integrity.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/svg-css.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/svg-filters.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/features-json/svg-fonts.json",
@@ -755,7 +819,9 @@
         "node_modules/autoprefixer/node_modules/caniuse-db/region-usage-json/alt-oc.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/region-usage-json/alt-sa.json",
         "node_modules/autoprefixer/node_modules/caniuse-db/region-usage-json/alt-ww.json",
+        "node_modules/autoprefixer/node_modules/normalize-range/package.json",
         "node_modules/autoprefixer/node_modules/num2fraction/package.json",
+        "node_modules/autoprefixer/node_modules/postcss-value-parser/package.json",
         "node_modules/autoprefixer/package.json",
         "node_modules/postcss/node_modules/js-base64/bower.json",
         "node_modules/postcss/node_modules/js-base64/package.json",
@@ -764,6 +830,7 @@
         "node_modules/postcss/node_modules/supports-color/package.json",
         "node_modules/postcss/package.json",
         "node_modules/postcss-safe-parser/package.json",
+        "node_modules/postcss-scss/package.json",
         "package.json"
       ]
     },
@@ -773,9 +840,10 @@
           ""
         ],
         "dependencies": {
-          "autoprefixer": "^6.0.0",
-          "postcss": "^5.0.4",
-          "postcss-safe-parser": "^1.0.1"
+          "autoprefixer": "^6.3.1",
+          "postcss": "^5.0.14",
+          "postcss-safe-parser": "^1.0.4",
+          "postcss-scss": "^0.1.3"
         }
       },
       {
@@ -786,10 +854,12 @@
           "node_modules/autoprefixer"
         ],
         "dependencies": {
-          "num2fraction": "^1.1.0",
-          "browserslist": "~1.0.0",
-          "caniuse-db": "^1.0.30000296",
-          "postcss": "^5.0.4"
+          "postcss-value-parser": "^3.2.3",
+          "normalize-range": "^0.1.2",
+          "num2fraction": "^1.2.2",
+          "browserslist": "~1.1.1",
+          "caniuse-db": "^1.0.30000387",
+          "postcss": "^5.0.14"
         }
       },
       {
@@ -797,7 +867,7 @@
           "node_modules/autoprefixer/node_modules/browserslist"
         ],
         "dependencies": {
-          "caniuse-db": "^1.0.30000281"
+          "caniuse-db": "^1.0.30000387"
         }
       },
       {
@@ -806,8 +876,8 @@
           "node_modules/postcss"
         ],
         "dependencies": {
-          "supports-color": "^3.1.1",
-          "source-map": "^0.5.0",
+          "supports-color": "^3.1.2",
+          "source-map": "^0.5.1",
           "js-base64": "^2.1.9"
         }
       },
@@ -825,7 +895,16 @@
           "node_modules/postcss-safe-parser"
         ],
         "dependencies": {
-          "postcss": "^5.0.3"
+          "postcss": "^5.0.13"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/postcss-scss/lib",
+          "node_modules/postcss-scss"
+        ],
+        "dependencies": {
+          "postcss": "^5.0.10"
         }
       }
     ]

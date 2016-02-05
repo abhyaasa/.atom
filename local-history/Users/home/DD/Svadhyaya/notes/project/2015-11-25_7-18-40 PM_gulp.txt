@@ -1,0 +1,198 @@
+UTEST
+
+$ gulp utest -m 'spy'
+[11:41:18] Using gulpfile ~/DD/Svadhyaya/gulpfile.js
+[11:41:18] Starting 'utest'...
+[11:41:19] Starting Karma server...
+WARN `start` method is deprecated since 0.13. It will be removed in 0.14. Please use
+  server = new Server(config, [done])
+  server.start()
+instead.
+01 09 2015 11:41:20.252:INFO [karma]: Karma v0.13.9 server started at http://localhost:9876/
+01 09 2015 11:41:20.262:INFO [launcher]: Starting browser ChromeCanary
+01 09 2015 11:41:22.795:INFO [Chrome 47.0.2498 (Mac OS X 10.10.5)]: Connected on socket vaQftdrgJLIcb1afAAAA with id 50446187
+Chrome 47.0.2498 (Mac OS X 10.10.5) getData should invoke jasmine spy handler with object represented in json file FAILED
+	Error: Unexpected request: GET /data/test/test.json
+	No more request expected
+	    at $httpBackend (/Users/home/DD/Svadhyaya/www/lib/angular-mocks/angular-mocks.js:1226:9)
+	    at sendReq (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:18327:9)
+	    at serverRequest (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:18043:16)
+	    at processQueue (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:21888:27)
+	    at /Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:21904:27
+	    at Scope.$eval (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:23100:28)
+	    at Scope.$digest (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:22916:31)
+	    at Object.<anonymous> (/Users/home/DD/Svadhyaya/www/js/getData.uspec.js:18:19)
+	    at Object.invoke (/Users/home/DD/Svadhyaya/www/lib/ionic/js/ionic.bundle.js:12884:17)
+	    at Object.workFn (/Users/home/DD/Svadhyaya/www/lib/angular-mocks/angular-mocks.js:2437:20)
+	Error: Declaration Location
+	    at window.inject.angular.mock.inject (/Users/home/DD/Svadhyaya/www/lib/angular-mocks/angular-mocks.js:2408:25)
+	    at Suite.<anonymous> (/Users/home/DD/Svadhyaya/www/js/getData.uspec.js:14:9)
+	    at /Users/home/DD/Svadhyaya/www/js/getData.uspec.js:3:1
+Chrome 47.0.2498 (Mac OS X 10.10.5): Executed 1 of 7 (1 FAILED) (0 secs / 0.101 Chrome 47.0.2498 (Mac OS X 10.10.5): Executed 1 of 7 (1 FAILED) (skipped 6) ERROR (0.132 secs / 0.101 secs)
+
+/Users/home/DD/Svadhyaya/gulpfile.js:268
+            throw err;
+                  ^
+Error: karma exited with code 1
+    at done (/Users/home/DD/Svadhyaya/node_modules/gulp-karma/index.js:56:30)
+    at ChildProcess.<anonymous> (/Users/home/DD/Svadhyaya/node_modules/gulp-karma/index.js:82:7)
+    at ChildProcess.emit (events.js:110:17)
+    at Process.ChildProcess._handle.onexit (child_process.js:1074:12)
+~/f/s$
+
+-------------------------------------
+
+ITEST
+
+Dialog: Google Chrome quit unexpectedly.
+
+~/DD/Svadhyaya$ protractor protractor.conf.js
+Using the selenium server at http://localhost:4444/wd/hub
+[launcher] Running 1 instances of WebDriver
+....dialog appears, then after several seconds....
+/Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:113
+  var template = new Error(this.message);
+                 ^
+UnknownError: unknown error: Chrome failed to start: exited normally
+ 
+-----------
+
+~/f/s$ ws
+seleniumProcess.pid: 23428
+19:24:34.112 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to /Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/protractor/selenium/chromedriver
+19:24:34.183 INFO - Java: Oracle Corporation 24.71-b01
+19:24:34.183 INFO - OS: Mac OS X 10.10.4 x86_64
+19:24:34.205 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+19:24:34.333 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+19:24:34.410 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:24:34.411 INFO - Version Jetty/5.1.x
+19:24:34.412 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+19:24:34.413 INFO - Started HttpContext[/selenium-server,/selenium-server]
+19:24:34.413 INFO - Started HttpContext[/,/]
+19:24:34.446 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@255e4373
+19:24:34.446 INFO - Started HttpContext[/wd,/wd]
+19:24:34.460 INFO - Started SocketListener on 0.0.0.0:4444
+19:24:34.460 INFO - Started org.openqa.jetty.jetty.Server@511192bd
+19:24:38.553 INFO - Executing: org.openqa.selenium.remote.server.handler.GetAllSessions@41179d43)
+19:24:38.556 INFO - Done: org.openqa.selenium.remote.server.handler.GetAllSessions@41179d43
+19:35:04.530 INFO - Executing: [new session: Capabilities [{count=1, browserName=chrome}]])
+19:35:04.548 INFO - Creating a new session for Capabilities [{count=1, browserName=chrome}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 13172
+Only local connections are allowed.
+19:36:06.122 WARN - Exception thrown
+java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'dram', ip: '172.27.35.142', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.4', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+
+-------------------------
+--------------------------------
+
+open /Applications/iTerm.app -n (works, but how to start with given command?)
+
+term.sh 'cd f/s;ionic serve' (works, but couldn't use iTerm instead of
+terminal)
+
+----------------------
+
+ome~/f/s$ is
+Gulp startup tasks: [ 'default', 'watch' ]
+Running live reload server: http://localhost:35729
+Watching : [ 'www/**/*', '!www/lib/**/*' ]
+Running dev server: http://localhost:8100
+Ionic server commands, enter:
+  restart or r to restart the client app from the root
+  goto or g and a url to have the app navigate to the given url
+  consolelogs or c to enable/disable console log output
+  serverlogs or s to enable/disable server log output
+  quit or q to shutdown the server and exit
+
+ionic $ 0     490908   debug    ENABLED
+[11:38:12] Using gulpfile ~/DD/Svadhyaya/gulpfile.js
+[11:38:12] Starting 'sass'...
+[11:38:12] Starting 'index'...
+[11:38:12] Starting 'watch'...
+[11:38:12] Finished 'watch' after 85 ms
+[11:38:12] gulp-inject 13 files into index.html.
+[11:38:12] gulp-inject Nothing to inject into index.html.
+[11:38:12] Finished 'index' after 160 ms
+HTML changed: www/index.html
+CSS changed:  www/css/ionic.app.css
+0     492527   debug    ENABLED
+[11:38:12] Finished 'sass' after 869 ms
+[11:38:12] Starting 'default'...
+[11:38:12] Finished 'default' after 4.11 μs
+CSS changed:  www/css/ionic.app.min.css
+[11:38:58] Starting 'index'...
+[11:38:58] gulp-inject 13 files into index.html.
+[11:38:58] gulp-inject Nothing to inject into index.html.
+[11:38:58] Finished 'index' after 58 ms
+HTML changed: www/index.html
+0     538810   debug    ENABLED
+^Chome~/f/s$
+
+------------------
+
+home~/DD/Svadhyaya$ ws
+seleniumProcess.pid: 6347
+11:38:31.857 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to /Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/protractor/selenium/chromedriver
+11:38:31.928 INFO - Java: Oracle Corporation 24.71-b01
+11:38:31.928 INFO - OS: Mac OS X 10.10.4 x86_64
+11:38:31.952 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+11:38:32.084 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+11:38:32.165 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+11:38:32.166 INFO - Version Jetty/5.1.x
+11:38:32.167 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+11:38:32.168 INFO - Started HttpContext[/selenium-server,/selenium-server]
+11:38:32.168 INFO - Started HttpContext[/,/]
+11:38:32.203 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@255e4373
+11:38:32.203 INFO - Started HttpContext[/wd,/wd]
+11:38:32.211 INFO - Started SocketListener on 0.0.0.0:4444
+11:38:32.211 INFO - Started org.openqa.jetty.jetty.Server@511192bd
+^CStaying alive until the Selenium Standalone process exits
+11:39:13.836 INFO - Shutting down...
+Selenium Standalone has exited with code 130
+home~/DD/Svadhyaya$
+
+---------------------------------------
+
+home~/f/s$ gulp itest
+[22:00:12] Using gulpfile ~/DD/Svadhyaya/gulpfile.js
+[22:00:12] Starting 'itest'...
+[22:00:12] Finished 'itest' after 9.32 ms
+seleniumProcess.pid: 99890
+22:00:13.284 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to /Users/home/.nvm/versions/node/v0.12.7/lib/node_modules/protractor/selenium/chromedriver
+22:00:13.358 INFO - Java: Oracle Corporation 24.71-b01
+22:00:13.358 INFO - OS: Mac OS X 10.10.4 x86_64
+22:00:13.386 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+22:00:13.513 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+22:00:13.589 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+22:00:13.590 INFO - Version Jetty/5.1.x
+22:00:13.592 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+22:00:13.593 INFO - Started HttpContext[/selenium-server,/selenium-server]
+22:00:13.593 INFO - Started HttpContext[/,/]
+22:00:13.639 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@4f9e462f
+22:00:13.639 INFO - Started HttpContext[/wd,/wd]
+22:00:13.649 INFO - Started SocketListener on 0.0.0.0:4444
+22:00:13.649 INFO - Started org.openqa.jetty.jetty.Server@5171d6fa
+
+
+
+Invalid command (CLI v1.6.4)
+
+Your system information:
+
+Cordova CLI: 5.1.1
+Gulp version:  CLI version 3.9.0
+Gulp local:   Local version 3.9.0
+Ionic Version: 1.0.0
+Ionic CLI Version: 1.6.4
+Ionic App Lib Version: 0.3.8
+ios-deploy version: 1.7.0
+ios-sim version: 4.1.1
+OS: Mac OS X Yosemite
+Node Version: v0.12.7
+Xcode version: Xcode 6.4 Build version 6E35b

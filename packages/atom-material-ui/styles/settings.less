@@ -2,6 +2,8 @@
 @import "elevation";
 
 .settings-view {
+    background-color: @app-background-color;
+
     .breadcrumb > .active a {
         .highlight(@app-background-color);
         font-weight: bold;
@@ -109,11 +111,15 @@
             position: absolute;
             bottom: 10px;
             left: 10px;
-            width: 400px;
+            width: 700px;
             height: 36px;
 
             .btn-toolbar {
                 margin: 0;
+
+                > .btn-group {
+                    margin: 0;
+                }
             }
         }
         .btn-group > .btn {
@@ -186,6 +192,7 @@
     }
     .config-menu {
         border-color: fade(@text-color, 5%);
+        min-width: 200px;
 
         [class*="icon-"]::before {
             font-size: 18px;
@@ -210,6 +217,7 @@
                 -webkit-transform: translate3d(0,0,0);
             }
             & > a {
+                color: @text-color;
                 transition: color 250ms ease;
                 padding: 1.25rem 1rem;
 

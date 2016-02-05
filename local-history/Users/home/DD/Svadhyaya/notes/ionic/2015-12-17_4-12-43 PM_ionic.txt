@@ -1,0 +1,179 @@
+UNCAUGHT EXCEPTIONS
+
+If "An uncaught exception occurred and has been reported to Ionic" message,
+try running gulp kill, and then ps and check only bash process is listed.
+
+/Users/home/DD/lib/ionic-quickstarter
+
+DEBUGGING
+
+http://www.gajotres.net/how-to-properly-debug-your-ionic-application/
+
+
+BOWER
+
+bower info <package>
+
+
+E-E TESTING
+
+ws (webdriver-manager start)
+
+
+BASH
+
+# alias is='ionic serve -c -s -l --browser /Applications/Utilities/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias isl='ionic serve -c -l --browser /Applications/Google\ Chrome\ Canary.app'
+alias isi='ionic serve -c -t ios --browser /Applications/Google\ Chrome\'
+alias isa='ionic serve -c -t android --browser /Applications/Google\ Chrome\
+Canary.app'
+alias is='ionic serve -c'
+alias ws='webdriver-manager start'
+alias pr='protractor protractor.conf.js'
+alias kt='osascript -e \'quit app "Terminal"\''
+# dgulp: see http://www.greg5green.com/blog/debugging-gulp-js-tasks/
+# alias dgulp='node-debug /usr/local/bin/gulp'
+alias dgulp='node debug /usr/local/bin/gulp'
+
+to run with ios and chrome, or just ios, emulation in browser
+
+-------------------
+
+restore npm: ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+
+update: npm install -g ionic
+
+ionic start --appname "Svadhyaya" --id com.github.vasudeva-chaynes.svadhaya --sass sd blank
+cd Svadhyaya
+ionic platform add ios
+ionic build ios
+
+ios emulator: ionic emulate ios
+or
+ionic app: ionic upload (login chaynes56@gmail.com sgsd....)
+or
+browser: ionic serve, or phonegap app http://192.168.1.82:3000
+
+ionic run: same as emulate ios when iphone not connected; requires
+developer code signing when device connected.
+
+-------------------------
+
+    var deviceInformation = ionic.Platform.device();
+    console.log('--------' + deviceInformation);
+
+alias is='ionic serve -c -s -l --browser /Applications/Utilities/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+To install ionic (see installation.txt also):
+$ sudo npm install -g ionic cordova
+
+To start project:
+$ ionic start [project]
+$ cd [project]
+$ ionic hooks add
+$ ionic platform add ios
+$ ionic platform add android
+$ ionic setup sass # http://ionicframework.com/docs/cli/sass.html (gulp)
+
+To use ionic app server:
+$ ionic login
+$ ionic upload
+Then use iphone ionic app to run.
+
+To test:
+$ ionic serve --lab # iOS and Android view
+
+home:~/dda/ionic 502# ionic login
+
+To continue, please login to your Ionic account.
+Don't have one? Create a one at: https://apps.ionic.io/signup
+
+Email: chaynes
+ ✗ error:   Invalid input for Email:
+Email: chaynes56@gmail.com
+Password:
+Logged in! :)
+home:~/dda/ionic 503# ionic upload
+
+Uploading app...
+home:~/dda/ionic 504# ls
+total 16
+0 ./		0 ../		0 myapp/	8 notes.txt	8 www.zip
+home:~/dda/ionic 505# cd myapp
+home:~/dda/ionic/myapp 506# ionic upload
+
+Uploading app...
+Successfully uploaded (9e6d832e)
+
+home:~/dda/ionic/myapp 507#
+
+--------
+
+/usr/local/lib/node_modules/ionic/lib/ionic/starter-templates.json
+
+{
+  "total_count": "7",
+  "incomplete_results": false,
+  "items": [
+    {
+      "name": "ionic-starter-maps",
+      "description": "An Ionic starter project using Google Maps and a side menu",
+      "created_at": "2014-04-28T20:16:01Z",
+      "updated_at": "2015-01-14T19:14:08Z",
+      "pushed_at": "2014-09-03T07:20:28Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-maps.git"
+    },
+    {
+      "name": "ionic-starter-tabs",
+      "description": "A starting project for Ionic using a simple tabbed interface",
+      "created_at": "2014-03-21T17:56:04Z",
+      "updated_at": "2015-01-11T16:54:23Z",
+      "pushed_at": "2014-12-29T21:09:20Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-tabs.git"
+    },
+    {
+      "name": "ionic-starter-sidemenu",
+      "description": "A starting project for Ionic using a side menu with navigation in the content area",
+      "created_at": "2014-03-24T22:31:35Z",
+      "updated_at": "2015-01-12T06:33:31Z",
+      "pushed_at": "2014-12-15T20:47:21Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-sidemenu.git"
+    },
+    {
+      "id": 17983811,
+      "name": "ionic-starter-blank",
+      "description": "A blank starter project for Ionic",
+      "created_at": "2014-03-21T15:14:45Z",
+      "updated_at": "2014-12-10T23:36:01Z",
+      "pushed_at": "2014-05-14T15:26:21Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-blank.git"
+    },
+    {
+      "id": 24473944,
+      "name": "ionic-starter-salesforce",
+      "description": "A starter project for Ionic and Salesforce",
+      "created_at": "2014-09-25T20:22:13Z",
+      "updated_at": "2015-01-06T10:08:01Z",
+      "pushed_at": "2014-11-06T18:57:36Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-salesforce.git"
+    },
+    {
+      "id": 24610601,
+      "name": "ionic-starter-tests",
+      "description": "A test of different kinds of page navigation",
+      "created_at": "2014-09-29T19:57:25Z",
+      "updated_at": "2015-01-17T17:12:18Z",
+      "pushed_at": "2015-01-17T17:12:17Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-tests.git"
+    },
+    {
+      "id": 27608851,
+      "name": "ionic-starter-complex-list",
+      "description": "A complex list starter template",
+      "created_at": "2014-12-05T20:29:34Z",
+      "updated_at": "2014-12-06T05:12:52Z",
+      "pushed_at": "2014-12-05T20:29:34Z",
+      "git_url": "git://github.com/driftyco/ionic-starter-complex-list.git"
+    }
+  ]
+}

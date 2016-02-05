@@ -1,0 +1,33 @@
+// app scss other than variables
+
+.no-response {
+  background-color: white; }
+  
+.right-response {
+  background-color: green; }
+
+.wrong-response {
+  background-color: red; }
+  
+.major-text {
+  font-size: 120%; }
+
+.minor-text {
+  font-size: 90%; }
+
+.fine-print {
+  font-size: 80%; }
+
+.warning {
+  color: $warning-color; }
+
+.deck-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+
+td {
+  padding-left: 10px;
+  padding-right: 5px; }
+
+tr td:nth-child(odd) { font-weight: bold; }

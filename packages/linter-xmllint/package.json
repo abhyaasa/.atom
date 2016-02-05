@@ -1,40 +1,205 @@
 {
   "name": "linter-xmllint",
-  "linter-package": true,
   "main": "./lib/init",
-  "version": "0.0.7",
+  "version": "1.3.0",
   "description": "Lint XML on the fly, using xmllint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AtomLinter/linter-xmllint"
+    "url": "git+https://github.com/AtomLinter/linter-xmllint.git"
   },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {},
-  "readme": "linter-xmllint\n===========\n\n> xmllint — The xmllint program parses XML files. It is useful for detecting errors XML code. See [xmlsoft.org/xmllint.html](http://xmlsoft.org/xmllint.html) for more informations about xmllint.\n\nThis package will lint your `.xml` opened filed in Atom through [xmllint linter](http://xmlsoft.org/xmllint.html). **It will lint on edit and/or on save**, so you'll see instantly if your code has errors.\n\n### Linter installation\nBefore using this package, you must ensure that `xmllint` is installed on your system. On recent versions of Mac OS X, `xmllint` comes pre-installed. To install `xmllint` on other platforms, do the following:\n\n1. On Linux:\n\n     ```text\n     [sudo] apt-get install libxml2-utils\n     ```\n\n   On Windows, follow the instructions [here](http://flowingmotion.jojordan.org/2011/10/08/3-steps-to-download-xmllint/). There is another version on code.google.com, but that version is incompatible with this plugin.\n\nOnce `xmllint` is installed, you must ensure it is in your system PATH so that Linter can find it.\n\n## Installation\n\n* `$ apm install linter` (if you don't have [AtomLinter/Linter](https://github.com/AtomLinter/Linter) installed).\n* `$ apm install linter-xmllint`\n\n\n## Other available linters\n- [linter-php](https://atom.io/packages/linter-php), for PHP using `php -l`\n- [linter-phpcs](https://atom.io/packages/linter-phpcs) - Linter plugin for PHP, using phpcs.\n- [linter-phpmd](https://atom.io/packages/linter-phpmd) - Linter plugin for PHP, using phpmd.\n- [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint.\n- [linter-scss-lint](https://atom.io/packages/linter-scss-lint) - Sass Linter plugin for SCSS, using scss-lint.\n- [linter-coffeelint](https://atom.io/packages/linter-coffeelint) Linter plugin for CoffeeScript, using coffeelint.\n- [linter-csslint](https://atom.io/packages/linter-csslint) Linter plugin for CSS, using csslint.\n- [linter-rubocop](https://atom.io/packages/linter-rubocop) - Linter plugin for Ruby, using rubocop.\n- [linter-tslint](https://atom.io/packages/linter-tslint) Linter plugin for TypeScript, using tslint.\n\n## Donation\n[![Share the love!](https://chewbacco-stuff.s3.amazonaws.com/donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXUYS4ARNHCN8)\n",
+  "dependencies": {
+    "atom-linter": "^4.1.1",
+    "atom-package-deps": "^3.0.0",
+    "sax": "^1.1.4",
+    "xmldoc": "^0.4.0",
+    "xregexp": "^3.0.0"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.13.1"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "scripts": {
+    "lint": "coffeelint lib spec"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-xmllint\n\n[![Build Status](https://img.shields.io/travis/AtomLinter/linter-xmllint.svg)](https://travis-ci.org/AtomLinter/linter-xmllint)\n[![Plugin installs!](https://img.shields.io/apm/dm/linter-xmllint.svg)](https://atom.io/packages/linter-xmllint)\n[![Package version!](https://img.shields.io/apm/v/linter-xmllint.svg)](https://atom.io/packages/linter-xmllint)\n[![Dependencies!](https://img.shields.io/david/AtomLinter/linter-xmllint.svg)](https://david-dm.org/AtomLinter/linter-xmllint)\n\n> xmllint — The xmllint program parses XML files. It is useful for detecting errors XML code. See [xmlsoft.org/xmllint.html](http://xmlsoft.org/xmllint.html) for more informations about xmllint.\n\nThis package will lint your opened `.xml` files in Atom through [xmllint linter](http://xmlsoft.org/xmllint.html).\n\nThe [changelog](https://github.com/AtomLinter/linter-xmllint/blob/master/CHANGELOG.md) lists the changes for each release.\n\n## Linter installation\n\nBefore using this package, you must ensure that `xmllint` is installed on your system. On recent versions of Mac OS X, `xmllint` comes pre-installed. To install `xmllint` on other platforms, do the following:\n\n1. On Linux:\n\n     ```text\n     [sudo] apt-get install libxml2-utils\n     ```\n\n2. On Windows, follow the instructions [here](http://flowingmotion.jojordan.org/2011/10/08/3-steps-to-download-xmllint/). There is another version on code.google.com, but that version is incompatible with this plugin.\n\nOnce `xmllint` is installed, you must ensure it is in your system PATH so that Linter can find it.\n\n## Installation\n\n* `$ apm install linter-xmllint`\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/AtomLinter/linter-xmllint/issues"
   },
-  "homepage": "https://github.com/AtomLinter/linter-xmllint",
-  "_id": "linter-xmllint@0.0.7",
-  "_shasum": "de2189b9d307790729b7d709e35ed178885422c8",
-  "_resolved": "file:../d-115719-42777-1kado03/package.tgz",
-  "_from": "../d-115719-42777-1kado03/package.tgz",
+  "homepage": "https://github.com/AtomLinter/linter-xmllint#readme",
+  "_id": "linter-xmllint@1.3.0",
+  "_shasum": "159a85e690e99aba19385e1e68d286b12f5be529",
+  "_resolved": "file:../d-116010-38954-e443e/package.tgz",
+  "_from": "../d-116010-38954-e443e/package.tgz",
   "_atomModuleCache": {
     "version": 1,
-    "dependencies": [],
+    "dependencies": [
+      {
+        "name": "atom-linter",
+        "version": "4.3.1",
+        "path": "node_modules/atom-linter/lib/helpers.js"
+      },
+      {
+        "name": "consistent-path",
+        "version": "1.0.3",
+        "path": "node_modules/atom-linter/node_modules/consistent-path/lib/index.js"
+      },
+      {
+        "name": "shell-path",
+        "version": "1.0.4",
+        "path": "node_modules/atom-linter/node_modules/consistent-path/node_modules/shell-path/index.js"
+      },
+      {
+        "name": "tmp",
+        "version": "0.0.28",
+        "path": "node_modules/atom-linter/node_modules/tmp/lib/tmp.js"
+      },
+      {
+        "name": "os-tmpdir",
+        "version": "1.0.1",
+        "path": "node_modules/atom-linter/node_modules/tmp/node_modules/os-tmpdir/index.js"
+      },
+      {
+        "name": "atom-package-deps",
+        "version": "3.0.7",
+        "path": "node_modules/atom-package-deps/lib/main.js"
+      },
+      {
+        "name": "sb-callsite",
+        "version": "1.1.1",
+        "path": "node_modules/atom-package-deps/node_modules/sb-callsite/lib/main.js"
+      },
+      {
+        "name": "sax",
+        "version": "1.1.4",
+        "path": "node_modules/sax/lib/sax.js"
+      },
+      {
+        "name": "xmldoc",
+        "version": "0.4.0",
+        "path": "node_modules/xmldoc/index.js"
+      },
+      {
+        "name": "xregexp",
+        "version": "3.0.0",
+        "path": "node_modules/xregexp/xregexp-all.js"
+      }
+    ],
     "extensions": {
-      ".coffee": [
-        "lib/init.coffee",
-        "lib/linter-xmllint.coffee"
-      ],
       ".json": [
+        "coffeelint.json",
+        "node_modules/atom-linter/node_modules/consistent-path/node_modules/shell-path/package.json",
+        "node_modules/atom-linter/node_modules/consistent-path/package.json",
+        "node_modules/atom-linter/node_modules/tmp/node_modules/os-tmpdir/package.json",
+        "node_modules/atom-linter/node_modules/tmp/package.json",
+        "node_modules/atom-linter/package.json",
+        "node_modules/atom-package-deps/node_modules/sb-callsite/package.json",
+        "node_modules/atom-package-deps/package.json",
+        "node_modules/sax/package.json",
+        "node_modules/xmldoc/package.json",
+        "node_modules/xregexp/package.json",
         "package.json"
+      ],
+      ".coffee": [
+        "lib/init.coffee"
+      ],
+      ".js": [
+        "node_modules/atom-linter/lib/helpers.js",
+        "node_modules/atom-linter/node_modules/consistent-path/lib/index.js",
+        "node_modules/atom-linter/node_modules/consistent-path/node_modules/shell-path/index.js",
+        "node_modules/atom-linter/node_modules/consistent-path/src/index.js",
+        "node_modules/atom-linter/node_modules/tmp/Gruntfile.js",
+        "node_modules/atom-linter/node_modules/tmp/lib/tmp.js",
+        "node_modules/atom-linter/node_modules/tmp/node_modules/os-tmpdir/index.js",
+        "node_modules/atom-package-deps/lib/helpers.js",
+        "node_modules/atom-package-deps/lib/main.js",
+        "node_modules/atom-package-deps/lib/view.js",
+        "node_modules/atom-package-deps/node_modules/sb-callsite/lib/main.js",
+        "node_modules/sax/lib/sax.js",
+        "node_modules/xmldoc/examples/example.js",
+        "node_modules/xmldoc/index.js",
+        "node_modules/xmldoc/lib/xmldoc.js",
+        "node_modules/xregexp/xregexp-all.js"
       ]
     },
-    "folders": []
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "atom-linter": "^4.1.1",
+          "atom-package-deps": "^3.0.0",
+          "sax": "^1.1.4",
+          "xmldoc": "^0.4.0",
+          "xregexp": "^3.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-linter/lib",
+          "node_modules/atom-linter"
+        ],
+        "dependencies": {
+          "xregexp": "^3.0.0",
+          "consistent-path": "^1.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-linter/node_modules/consistent-path/lib",
+          "node_modules/atom-linter/node_modules/consistent-path",
+          "node_modules/atom-linter/node_modules/consistent-path/src"
+        ],
+        "dependencies": {
+          "shell-path": "^1.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-linter/node_modules/tmp",
+          "node_modules/atom-linter/node_modules/tmp/lib",
+          "node_modules/atom-linter/node_modules/tmp/test",
+          "node_modules/atom-linter/node_modules/tmp/test/symlinkme"
+        ],
+        "dependencies": {
+          "os-tmpdir": "~1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps/lib",
+          "node_modules/atom-package-deps"
+        ],
+        "dependencies": {
+          "sb-callsite": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/xmldoc/examples",
+          "node_modules/xmldoc",
+          "node_modules/xmldoc/lib"
+        ],
+        "dependencies": {
+          "sax": "~1.1.1"
+        }
+      }
+    ]
   }
 }
